@@ -9,7 +9,7 @@ export function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl mb-6">Get in Touch</h1>
+          <h1 className="text-4xl md:text-4xl mb-6 text-gray-900">Get in Touch</h1>
           <p className="text-xl text-white/60 max-w-3xl mx-auto">
             Have a project in mind? We'd love to hear from you. Let's create something extraordinary together.
           </p>
@@ -27,10 +27,10 @@ export function Contact() {
                   <div>
                     <h3 className="text-lg mb-2 text-gray-900">Office Address</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      Filmhouse Productions<br />
-                      123, Film City Road<br />
-                      Andheri West, Mumbai<br />
-                      Maharashtra 400053, India
+                    SHRIDEEPMALA FILMS PRIVATE LIMITED<br />
+                    Inlaks Nagar, Yari Road, <br />
+                    Versova, Andheri West,<br />
+                    Mumbai, Maharashtra - 400061
                     </p>
                   </div>
                 </div>
@@ -46,9 +46,9 @@ export function Contact() {
                   <div>
                     <h3 className="text-lg mb-2 text-gray-900">Phone Numbers</h3>
                     <div className="text-gray-600 text-sm space-y-1">
-                      <p>Office: +91 22 1234 5678</p>
-                      <p>Production: +91 98765 43210</p>
-                      <p>Casting: +91 98765 43211</p>
+                      <p>Tel: +91-9565813272</p>
+                   
+                    
                     </div>
                   </div>
                 </div>
@@ -64,9 +64,8 @@ export function Contact() {
                   <div>
                     <h3 className="text-lg mb-2 text-gray-900">Email Addresses</h3>
                     <div className="text-gray-600 text-sm space-y-1">
-                      <p>General: info@filmhouse.com</p>
-                      <p>Production: production@filmhouse.com</p>
-                      <p>Careers: careers@filmhouse.com</p>
+                      <p>E-mail: shrideepmalafilms@gmail.com</p>
+                      
                     </div>
                   </div>
                 </div>
@@ -96,21 +95,42 @@ export function Contact() {
               <CardContent className="p-6">
                 <h3 className="text-lg mb-4">Follow Us</h3>
                 <div className="flex gap-3">
+                <a
+  href="https://www.facebook.com/dimple25dec"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block"
+>
                   <button className="w-10 h-10 rounded-full bg-white/10 hover:bg-red-600 transition-colors flex items-center justify-center">
                     <Facebook size={18} />
                   </button>
-                  <button className="w-10 h-10 rounded-full bg-white/10 hover:bg-red-600 transition-colors flex items-center justify-center">
+                  </a>
+                  {/* <button className="w-10 h-10 rounded-full bg-white/10 hover:bg-red-600 transition-colors flex items-center justify-center">
                     <Twitter size={18} />
-                  </button>
-                  <button className="w-10 h-10 rounded-full bg-white/10 hover:bg-red-600 transition-colors flex items-center justify-center">
-                    <Instagram size={18} />
-                  </button>
-                  <button className="w-10 h-10 rounded-full bg-white/10 hover:bg-red-600 transition-colors flex items-center justify-center">
+                  </button> */}
+                  <a
+  href="https://www.instagram.com/shri_deepmala_films?igsh=c2xwbWZ0MGg1MDU2&utm_source=qr"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block"
+>
+  <button className="w-10 h-10 rounded-full bg-white/10 hover:bg-red-600 transition-colors flex items-center justify-center">
+    <Instagram size={18} />
+  </button>
+</a>
+                  {/* <button className="w-10 h-10 rounded-full bg-white/10 hover:bg-red-600 transition-colors flex items-center justify-center">
                     <Linkedin size={18} />
-                  </button>
-                  <button className="w-10 h-10 rounded-full bg-white/10 hover:bg-red-600 transition-colors flex items-center justify-center">
-                    <Youtube size={18} />
-                  </button>
+                  </button> */}
+                  <a
+  href="https://youtube.com/@shrideepmalafilms?si=ET2xCCThKjns0twe"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block"
+>
+  <button className="w-10 h-10 rounded-full bg-white/10 hover:bg-red-600 transition-colors flex items-center justify-center">
+    <Youtube size={18} />
+  </button>
+</a>
                 </div>
               </CardContent>
             </Card>
@@ -225,7 +245,7 @@ export function Contact() {
         </div>
 
         {/* Map Section */}
-        <Card className="bg-white border-gray-200 overflow-hidden shadow-md">
+        {/* <Card className="bg-white border-gray-200 overflow-hidden shadow-md">
           <div className="h-96 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
             <div className="text-center text-gray-500">
               <MapPin size={48} className="mx-auto mb-4 text-red-600" />
@@ -233,7 +253,7 @@ export function Contact() {
               <p className="text-sm mt-2">123, Film City Road, Andheri West, Mumbai</p>
             </div>
           </div>
-        </Card>
+        </Card> */}
 
         {/* Additional Info */}
         <div className="mt-16 grid md:grid-cols-3 gap-8">
@@ -244,7 +264,7 @@ export function Contact() {
                 For film and series production opportunities
               </p>
               <a href="mailto:production@filmhouse.com" className="text-red-600 hover:text-red-500 transition-colors">
-                production@filmhouse.com
+              shrideepmalafilms@gmail.com
               </a>
             </CardContent>
           </Card>
@@ -256,7 +276,7 @@ export function Contact() {
                 Submit your profile or casting inquiries
               </p>
               <a href="mailto:casting@filmhouse.com" className="text-red-600 hover:text-red-500 transition-colors">
-                casting@filmhouse.com
+              shrideepmalafilms@gmail.com
               </a>
             </CardContent>
           </Card>
@@ -268,7 +288,7 @@ export function Contact() {
                 Press releases and media inquiries
               </p>
               <a href="mailto:media@filmhouse.com" className="text-red-600 hover:text-red-500 transition-colors">
-                media@filmhouse.com
+              shrideepmalafilms@gmail.com
               </a>
             </CardContent>
           </Card>

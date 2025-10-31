@@ -3,57 +3,62 @@ import { Card, CardContent } from './ui/card';
 import { Calendar, Clock, Play, Image as ImageIcon } from 'lucide-react';
 import { Badge } from './ui/badge';
 
+import first from '../assets/poster/FIRST.png'
+import second from '../assets/poster/SECOND.jpeg'
+import third from '../assets/poster/THIRD.png'
+import fourth from '../assets/poster/FOURTH.jpeg'
+
 export function UpcomingProjects() {
   const projects = [
     {
       id: 1,
-      title: 'Eternal Flames',
+      title: 'Another Shade Of Yellow',
       type: 'Feature Film',
-      genre: 'Romance Drama',
+      genre: 'Suspense',
       releaseDate: 'March 2025',
       status: 'Post-Production',
-      description: 'A sweeping romantic epic set against the backdrop of India\'s independence struggle. Follow two star-crossed lovers as they navigate love, duty, and sacrifice.',
-      image: 'https://images.unsplash.com/photo-1623375428145-4d276c83ce5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWxtJTIwcHJvZHVjdGlvbiUyMG1vdmllJTIwcG9zdGVyfGVufDF8fHx8MTc2MTYyNzE2OXww&ixlib=rb-4.1.0&q=80&w=1080',
-      director: 'Rajesh Kumar',
+      description: 'A woman living alone becomes entangled in her own memories-until the past she refuses to let go of starts to becomes her present.',
+      image: first,
+      director: 'Deep Mala Srivastava',
       duration: '165 mins',
       hasVideo: true,
     },
     {
       id: 2,
-      title: 'Mumbai Noir',
-      type: 'Web Series',
-      genre: 'Crime Thriller',
+      title: 'Shubh Deepawali',
+      type: 'Film',
+      genre: ' Family Drama',
       releaseDate: 'April 2025',
       status: 'Filming',
-      description: 'A gritty crime series exploring the dark underbelly of Mumbai. Eight episodes of intense drama, complex characters, and shocking revelations.',
-      image: 'https://images.unsplash.com/photo-1695014192231-18462db3ebde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWxtJTIwcHJvZHVjdGlvbiUyMHNldHxlbnwxfHx8fDE3NjE1NTYxODl8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      director: 'Priya Sharma',
+      description: 'An emotional journey that explores how ego can destroy relationships and how the power of compassion and unity can heal what pride once broke.',
+      image: second,
+      director: 'Deep Mala Srivastava',
       duration: '8 Episodes',
       hasVideo: false,
     },
     {
       id: 3,
-      title: 'Songs of the Valley',
-      type: 'Music Video Series',
-      genre: 'Musical',
+      title: 'Mosquito',
+      type: 'Short Film',
+      genre: ' Thriller',
       releaseDate: 'May 2025',
       status: 'Pre-Production',
-      description: 'A collection of five original songs celebrating the cultural richness of Kashmir. Stunning visuals paired with soul-stirring melodies.',
-      image: 'https://images.unsplash.com/photo-1622829118151-1cfabdf11a68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaW5lbWElMjBjYW1lcmElMjBwcm9kdWN0aW9ufGVufDF8fHx8MTc2MTUzOTYwM3ww&ixlib=rb-4.1.0&q=80&w=1080',
-      director: 'Multiple Directors',
+      description: 'Set against the backdrop of modern relationships, the story exposes how one-sided love fueled by ego and jealousy can disrupt lives and destroy more than just hearts.',
+      director: 'Deep Mala Srivastava',
+      image: third,
       duration: '5 Songs',
       hasVideo: true,
     },
     {
       id: 4,
-      title: 'The Last Programmer',
+      title: 'Mehraru ',
       type: 'Short Film',
-      genre: 'Sci-Fi',
+      genre: 'Comedy',
       releaseDate: 'June 2025',
       status: 'Post-Production',
-      description: 'In a world run by AI, one programmer discovers a way to rewrite reality itself. A thought-provoking short about technology and humanity.',
-      image: 'https://images.unsplash.com/photo-1512939755946-501bd2c2540d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3ZpZSUyMGRpcmVjdG9yJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzYxNjI3MTcwfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      director: 'Amit Verma',
+      description: 'In todays times, extramarital affairs have become very common, and this comedy short film humorously tackles this very issue.',
+      image: fourth,
+      director: 'Deep Mala Srivastava',
       duration: '22 mins',
       hasVideo: true,
     },
@@ -64,7 +69,7 @@ export function UpcomingProjects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl mb-6 text-gray-900">Upcoming Projects</h1>
+          <h1 className="text-3xl md:text-4xl mb-6 text-gray-900">Upcoming Projects</h1>
           <p className="text-xl text-gray-500 max-w-3xl mx-auto">
             Get a sneak peek at our exciting lineup of films, series, and special projects
           </p>
@@ -136,9 +141,9 @@ export function UpcomingProjects() {
 
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">Directed by <span className="text-red-600">{project.director}</span></span>
-                    <button className="px-6 py-2 bg-red-600 text-white hover:bg-red-700 transition-colors rounded">
+                    {/* <button className="px-6 py-2 bg-red-600 text-white hover:bg-red-700 transition-colors rounded">
                       Learn More
-                    </button>
+                    </button> */}
                   </div>
                 </CardContent>
               </div>

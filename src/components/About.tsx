@@ -1,23 +1,44 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Card, CardContent } from './ui/card';
 import { Award, Users, Film, Target } from 'lucide-react';
+import DeepMala from '../assets/directors/Deep-Mala-Srivastava.jpeg';
+import AnilDhakad from '../assets/directors/Anil-Dhakad.jpeg';
+import OurStory from '../assets/story/ourstory.jpg';
 
 export function About() {
   const directors = [
     {
       id: 1,
-      name: 'Rajesh Kumar',
+      name: 'Rajesh Deep Mala Srivastava',
       role: 'Founder & Creative Director',
-      bio: 'With over 20 years in the industry, Rajesh has directed numerous award-winning films and series. His vision has shaped the company into what it is today.',
-      image: 'https://images.unsplash.com/photo-1512939755946-501bd2c2540d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3ZpZSUyMGRpcmVjdG9yJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzYxNjI3MTcwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      bio: `Born and raised in a small village in the Deoria district of Uttar Pradesh, Deep Mala
+Srivastava is a self-made creative visionary whose journey reflects passion,
+perseverance, and an unwavering dedication to cinema. Renowned for her sharp
+sense of humor, distinctive artistic vision, and deep understanding of world cinema,
+she continues to refine her craft in writing and direction, establishing herself as a
+promising voice in the contemporary film landscape. 
+
+After working with several esteemed professionals across the Bhartiya film industry,
+Dedicated, dynamic and deeply passionate about storytelling, Deep Mala decided to
+take the next bold step in her career-founding her own production company,
+Shrideepmala Films Pvt. Ltd., alongside her long-time trusted friend, Mr. Anil
+Dhakad. The company represents the realization of her lifelong dream: to create
+meaningful, visually compelling stories that inspire, entertain, and resonate with
+audiences worldwide.
+
+Driven by creativity and authenticity, Deep Mala believes that She is a very creative
+person and truly feels that she has a lot to say to the world and she is going to let that
+happen.`    ,
+
+      image: DeepMala,
       awards: '15+ National Awards',
     },
     {
       id: 2,
-      name: 'Priya Sharma',
-      role: 'Executive Producer & Director',
-      bio: 'Priya specializes in contemporary drama and has produced some of the most critically acclaimed series in recent years. Her storytelling resonates with modern audiences.',
-      image: 'https://images.unsplash.com/photo-1758639842438-718755aa57e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY3RvciUyMHBvcnRyYWl0JTIwcHJvZmVzc2lvbmFsfGVufDF8fHx8MTc2MTU1NzY0N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+      name: 'Anil Dhakad',
+      role: 'Co-Founder & Director',
+      bio: 'Hailing from the Shivpuri district of Madhya Pradesh, Anil Dhakad is a multifaceted professional-widely recognized as a celebrity yoga trainer and a driving force behind Shrideepmala Films Pvt. Ltd. As the company’s Co-Founder and Director, he stands as one of its strongest pillars, contributing strategic vision and creative leadership to every project. Originally trained as an actor, Anil moved to Mumbai to pursue his passion for the performing arts. While his journey led him to discover a deep connection with yoga-where he built a distinguished reputation-his love for cinema has remained constant. Today, he combines his artistic sensibilities, discipline, and industry insight to guide Shrideepmala Films toward new creative and professional heights. Anil Dhakad continues to bridge the worlds of wellness and entertainment, embodying the spirit of balance, focus, and creative excellence.',
+      image: AnilDhakad,
       awards: '10+ International Awards',
     },
   ];
@@ -50,7 +71,7 @@ export function About() {
       {/* Company Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl mb-6 text-gray-900">About Filmhouse Productions</h1>
+          <h1 className="text-3xl md:text-4xl mb-6 text-gray-900">About Filmhouse Productions</h1>
           <p className="text-xl text-gray-500 max-w-3xl mx-auto">
             Creating cinematic masterpieces that inspire, entertain, and transform
           </p>
@@ -59,7 +80,7 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <div className="relative h-[600px]">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1695014192231-18462db3ebde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWxtJTIwcHJvZHVjdGlvbiUyMHNldHxlbnwxfHx8fDE3NjE1NTYxODl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              src={OurStory}
               alt="Production Set"
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />
@@ -67,27 +88,32 @@ export function About() {
           <div>
             <h2 className="text-4xl mb-6 text-gray-900">Our Story</h2>
             <div className="space-y-4 text-gray-600">
+              <b>Welcome to Shrideepmala Films Pvt. Ltd.</b>
+              <b>
+              Founded by Ms. Deep Mala Srivastava and Mr. Anil Dhakad
+              </b>
               <p>
-                Founded in 2014, Filmhouse Productions emerged from a passion for storytelling 
-                and a vision to create content that matters. What started as a small production 
-                house has grown into one of the most respected names in the industry.
+              At Shrideepmala Films Pvt. Ltd., creativity meets precision and every frame
+becomes a work of art. As a forward-thinking film production company, we specialize
+in crafting exceptional visual narratives across diverse genres-including corporate
+films, branded content, music videos, documentaries, and commercial
+advertisements.
               </p>
               <p>
-                We believe in the power of cinema to change perspectives, evoke emotions, and 
-                inspire action. Our productions span multiple genres - from thought-provoking 
-                dramas to edge-of-your-seat thrillers, from heartwarming comedies to epic 
-                historical sagas.
+              Driven by an unwavering commitment to quality and innovation, we collaborate
+closely with our clients and creative partners to transform ideas into captivating
+cinematic experiences. From the initial concept to the final cut, every project we
+undertake is shaped by passion, storytelling excellence, and world-class
+production standards.
               </p>
               <p>
-                With state-of-the-art facilities, cutting-edge technology, and a team of 
-                passionate professionals, we bring stories to life with authenticity and artistry. 
-                Every frame we create is a testament to our dedication to the craft of filmmaking.
+              Whether it’s building a brand’s identity, conveying a powerful message, or creating
+unforgettable moments on screen, Shrideepmala Films delivers visuals that engage,
+inspire, and resonate with audiences worldwide.
               </p>
-              <p>
-                Our commitment extends beyond entertainment. We strive to create opportunities 
-                for emerging talent, support diverse voices, and contribute meaningfully to the 
-                cultural landscape of Indian cinema.
-              </p>
+              <b>
+                “Where vision meets artistry-and every story finds its perfect frame.”
+              </b>
             </div>
           </div>
         </div>
@@ -113,40 +139,46 @@ export function About() {
 
       {/* Directors Section */}
       <section className="bg-gray-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl mb-4 text-gray-900">Meet Our Directors</h2>
-            <p className="text-gray-500">Visionaries behind our storytelling</p>
-          </div>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl mb-4 text-gray-900">Meet Our Directors</h2>
+      <p className="text-gray-500">Visionaries behind our storytelling</p>
+    </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            {directors.map((director) => (
-              <Card key={director.id} className="bg-white border-gray-200 overflow-hidden shadow-lg">
-                <div className="grid md:grid-cols-5 gap-6">
-                  <div className="md:col-span-2 h-80 md:h-auto">
-                    <ImageWithFallback
-                      src={director.image}
-                      alt={director.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <CardContent className="md:col-span-3 p-8 flex flex-col justify-center">
-                    <div className="inline-block px-3 py-1 bg-red-600/20 text-red-600 text-sm mb-4 w-fit">
-                      {director.awards}
-                    </div>
-                    <h3 className="text-3xl mb-2 text-gray-900">{director.name}</h3>
-                    <p className="text-red-600 mb-6">{director.role}</p>
-                    <p className="text-gray-600 leading-relaxed">{director.bio}</p>
-                  </CardContent>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+    {/* Stack cards vertically — one per row */}
+    <div className="space-y-12">
+      {directors.map((director) => (
+        <Card
+          key={director.id}
+          className="bg-white border-gray-200 overflow-hidden shadow-lg max-w-5xl mx-auto"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+            {/* Image: Full width on mobile, 2/5 on desktop */}
+            <div className="md:col-span-2 h-80 md:h-auto">
+              <ImageWithFallback
+                src={director.image}
+                alt={director.name}
+                className="w-full h-full object-cover"
+              />
+            </div>
 
+            {/* Content: Full width on mobile, 3/5 on desktop */}
+            <CardContent className="md:col-span-3 p-8 flex flex-col justify-center">
+              <div className="inline-block px-3 py-1 bg-red-600/20 text-red-600 text-sm mb-4 w-fit rounded">
+                {director.awards}
+              </div>
+              <h3 className="text-3xl mb-2 text-gray-900">{director.name}</h3>
+              <p className="text-red-600 mb-6">{director.role}</p>
+              <p className="text-gray-600 leading-relaxed">{director.bio}</p>
+            </CardContent>
+          </div>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
       {/* Stats Section */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
@@ -167,7 +199,7 @@ export function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

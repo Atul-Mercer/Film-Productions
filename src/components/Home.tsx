@@ -1,71 +1,132 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Card, CardContent } from './ui/card';
 import { Play, Star, Calendar } from 'lucide-react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+import first from '../assets/poster/FIRST.png'
+import second from '../assets/poster/SECOND.jpeg'
+import third from '../assets/poster/THIRD.png'
+import fourth from '../assets/poster/FOURTH.jpeg'
 
+import DRIP from '../assets/youtube/drip.png'
+import KAREGA from '../assets/youtube/karega.png'
+import UNKNOWN from '../assets/youtube/unkonwn.png'
 export function Home() {
   const featuredMovies = [
     {
       id: 1,
-      title: 'The Last Horizon',
+      title: 'Drip Drip ',
       year: 2024,
-      genre: 'Sci-Fi Drama',
+      genre: 'Youtube Video',
       rating: 8.5,
-      description: 'A gripping tale of humanity\'s final frontier and the choices that define us.',
-      image: 'https://images.unsplash.com/photo-1623375428145-4d276c83ce5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWxtJTIwcHJvZHVjdGlvbiUyMG1vdmllJTIwcG9zdGVyfGVufDF8fHx8MTc2MTYyNzE2OXww&ixlib=rb-4.1.0&q=80&w=1080',
+      description: 'Lost in the rain, chasing shadows through the pain, Every drop whispers the truth I can’t contain.',
+      image: DRIP,
+      link: 'https://www.youtube.com/watch?v=iT6eefjJD1U'
     },
     {
       id: 2,
-      title: 'Shadows of Tomorrow',
+      title: 'Chalo Chalein ',
       year: 2024,
-      genre: 'Thriller',
+      genre: 'Youtube Video',
       rating: 8.2,
-      description: 'In a world where time is currency, one man fights to reclaim his future.',
-      image: 'https://images.unsplash.com/photo-1695014192231-18462db3ebde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWxtJTIwcHJvZHVjdGlvbiUyMHNldHxlbnwxfHx8fDE3NjE1NTYxODl8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      description: 'Tighten your belt, open your eyes — let the river of change flow, Let’s walk together to rewrite history and bring back the golden glory.',
+      image: UNKNOWN,
+      link: 'https://www.youtube.com/watch?v=UIkfe753yzY'
     },
     {
       id: 3,
-      title: 'Echoes of Silence',
+      title: 'ए करेजा ',
       year: 2023,
-      genre: 'Drama',
+      genre: 'Youtube Video',
       rating: 9.1,
-      description: 'A powerful story of resilience, hope, and the unbreakable human spirit.',
-      image: 'https://images.unsplash.com/photo-1622829118151-1cfabdf11a68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaW5lbWElMjBjYW1lcmElMjBwcm9kdWN0aW9ufGVufDF8fHx8MTc2MTUzOTYwM3ww&ixlib=rb-4.1.0&q=80&w=1080',
+      description: 'The heart didn’t break — it just fell silent. There was no love, yet the memories overflowed.',
+      image: KAREGA,
+      link: 'https://www.youtube.com/watch?v=RiO3Q2Fw4GI'
     },
+  ];
+
+  // Define an array of featured items for the hero slider (5 slides with different images and content)
+  const featuredItems = [
+    {
+      image: first,
+      status: 'NOW SHOWING',
+      year: 2025,
+      title: 'Another Shade Of Yellow',
+      description: 'A woman living alone becomes entangled in her own memories-until the past she refuses to let go of starts to becomes her present.',
+    },
+    {
+      image: second,
+      status: 'COMING SOON',
+      year: 2026,
+      title: 'Shubh Deepawali ',
+      description: 'An emotional journey that explores how ego can destroy relationships and how the power of compassion and unity can heal what pride once broke.',
+    },
+    {
+      image: third,
+      status: 'NOW SHOWING',
+      year: 2024,
+      title: 'Mosquito',
+      description: 'Set against the backdrop of modern relationships, the story exposes how one-sided love fueled by ego and jealousy can disrupt lives and challenge the values of respect and empathy, how a man’s obsession spirals into chaos-revealing how pride and insecurity can destroy more than just hearts.',
+    },
+    {
+      image: fourth,
+      status: 'UPCOMING',
+      year: 2025,
+      title: 'Mehraru ',
+      description: 'In todays times, extramarital affairs have become very common, and this comedy short film humorously tackles this very issue.',
+    },
+    
   ];
 
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section with Big Poster */}
       <section className="relative h-[90vh] overflow-hidden">
-        <div className="absolute inset-0">
-          <ImageWithFallback
-            src="https://i.pinimg.com/1200x/de/80/1e/de801e0610771fe61df30604f94c9dc8.jpg"
-            alt="Featured Production"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        
-        <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-end pb-20">
-          <div className="max-w-3xl">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="px-3 py-1 bg-red-600 text-white text-xs tracking-wider">NOW SHOWING</span>
-              <span className="text-white/90">2025</span>
-            </div>
-            <h1 className="text-6xl md:text-7xl mb-6 text-white">SAIYAARA</h1>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl">
-              A groundbreaking cinematic experience that redefines the boundaries of storytelling. 
-              Journey with us through the depths of human emotion and the vastness of imagination.
-            </p>
-            <button className="px-8 py-4 bg-red-600 text-white hover:bg-red-700 transition-colors flex items-center gap-2 group">
-              <Play size={20} className="group-hover:scale-110 transition-transform" />
-              Watch Trailer
-            </button>
-          </div>
-        </div>
+        <Swiper
+          modules={[Autoplay, Pagination, EffectFade]}
+          autoplay={{ delay: 2000, disableOnInteraction: false }} // Auto-slide every 5 seconds
+          pagination={{ clickable: true, dynamicBullets: true }} // Beautiful pagination bullets
+          effect="fade" // Beautiful fade effect for transitions
+          fadeEffect={{ crossFade: true }} // Smooth cross-fade
+          loop={true} // Infinite loop for continuous sliding
+          speed={1000} // Smooth transition speed
+          className="h-full w-full"
+        >
+          {featuredItems.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="absolute inset-0">
+                <ImageWithFallback
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-1000 ease-in-out scale-100 hover:scale-105" // Added subtle zoom effect on hover for beauty
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" /> {/* Overlay gradient for better text readability and beautiful effect */}
+              </div>
+              <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-end pb-20">
+                <div className="max-w-3xl animate-fade-in"> {/* Added fade-in animation for content (define in CSS if needed) */}
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="px-3 py-1 bg-red-600 text-white text-xs tracking-wider rounded-full shadow-md">{item.status}</span> {/* Rounded for beauty */}
+                    {/* <span className="text-white/90">{item.year}</span> */}
+                  </div>
+                  <h1 className="text-6xl md:text-7xl mb-6 text-white font-bold tracking-tight drop-shadow-lg">{item.title}</h1> {/* Added shadow for better visibility */}
+                  <p className="text-xl text-white/90 mb-8 max-w-2xl leading-relaxed">{item.description}</p>
+                  <button className="px-8 py-4 bg-red-600 text-white hover:bg-red-700 transition-colors flex items-center gap-2 group rounded-lg shadow-lg hover:shadow-xl"> {/* Rounded and shadow for beauty */}
+                    <Play size={20} className="group-hover:scale-110 transition-transform" />
+                    Watch Trailer
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
 
       {/* About Production Section */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -107,21 +168,30 @@ export function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Featured Movies Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-end mb-12">
-            <div>
-              <h2 className="text-4xl mb-3 text-gray-900">Our Latest Productions</h2>
-              <p className="text-gray-500">Experience the magic of cinema</p>
-            </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="flex justify-between items-end mb-12">
+          <div>
+            <h2 className="text-4xl mb-3 text-gray-900 font-bold">Our Latest Productions</h2>
+            <p className="text-gray-500">Experience the magic of cinema</p>
           </div>
+        </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {featuredMovies.map((movie) => (
-              <Card key={movie.id} className="bg-white border-gray-200 overflow-hidden group cursor-pointer hover:shadow-xl transition-all">
+        {/* Movie Cards */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {featuredMovies.map((movie) => (
+            <a
+              key={movie.id}
+              href={movie.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
+            >
+              <Card className="bg-white border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300">
                 <div className="relative h-80 overflow-hidden">
                   <ImageWithFallback
                     src={movie.image}
@@ -136,19 +206,20 @@ export function Home() {
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
                     <Calendar size={14} />
-                    {movie.year} • {movie.genre}
+                    {movie.genre}
                   </div>
-                  <h3 className="text-2xl mb-3 text-gray-900">{movie.title}</h3>
+                  <h3 className="text-2xl mb-3 text-gray-900 font-semibold">{movie.title}</h3>
                   <p className="text-gray-600 mb-4">{movie.description}</p>
-                  <button className="text-red-600 hover:text-red-500 transition-colors flex items-center gap-2">
-                    Learn More →
-                  </button>
+                  <span className="text-red-600 hover:text-red-500 transition-colors flex items-center gap-2">
+                    Watch Now →
+                  </span>
                 </CardContent>
               </Card>
-            ))}
-          </div>
+            </a>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
     </div>
   );
 }
