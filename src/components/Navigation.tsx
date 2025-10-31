@@ -1,7 +1,10 @@
 import { Icon, Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import logo from '../SHRI DEEPMALA FILMS LOGO (1).png';
-import logos from '/Users/atul/Desktop/DeepMala Films/src/SHRI DEEPMALA FILMS LOGOS.png';
+// import logo from '../SHRI DEEPMALA FILMS LOGO (1).png';
+// import logos from '/Users/atul/Desktop/DeepMala Films/src/SHRI DEEPMALA FILMS LOGOS.png';
+
+import logos from '../assets/Logo/SHRI.png';
+
 
 interface NavigationProps {
   currentPage: string;
