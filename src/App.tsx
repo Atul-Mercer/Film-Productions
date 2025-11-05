@@ -8,6 +8,7 @@ import { InHouseTalent } from './components/InHouseTalent';
 import { Blog } from './components/Blog';
 import { Contact } from './components/Contact';
 import { Navigation } from './components/Navigation';
+import { Footer } from './components/Footer'; 
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -36,11 +37,17 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="flex flex-col min-h-screen bg-black text-gray-900">
+      {/* Header */}
       <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <main>
+
+      {/* Main Content */}
+      <main className="flex-1">
         {renderPage()}
       </main>
+
+      {/* ✅ Pass setCurrentPage prop here */}
+      <Footer setCurrentPage={setCurrentPage} />
     </div>
   );
 }

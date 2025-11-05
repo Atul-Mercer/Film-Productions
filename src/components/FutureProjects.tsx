@@ -96,7 +96,7 @@ uninvited.`,
       image: MICH,
       timeline: 'Ongoing 2025-2030',
       director: 'Director : Deep Mala Srivastava',
-      Writer : 'Writer :  Deep Mala Srivastava & Alok Darshi',
+      Writer : 'Writer :  Deep Mala Srivastava & Durg Raj Alok Darshi',
       description: 'This is the story of how, in todays changing environment, a happy family suddenly becomes the victim of an incident which they could never have imagined even in their wildest dreams, how the thought of a homosexual relationship becomes witness to a gruesome murder and how an inspector who is investigating this case gets deeply entangled in the web of events..',
       highlights: [
         '15+ plays planned for adaptation',
@@ -153,7 +153,7 @@ has to be done, the women must decide: will they
 continue to endure, or will they rise against the
 forces that confine them…`,
         director: 'Director : Deep Mala Srivastava',
-        Writer : 'Writer : Deep Mala & Alok Darshi',
+        Writer : 'Writer : Deep Mala & Durg Raj Alok Darshi',
       highlights: [
         'AI-driven narrative branching',
         'VR/AR integration',
@@ -215,14 +215,17 @@ forces that confine them…`,
     },
   ];
 
+
+  
+
   return (
     <div className="min-h-screen py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-red-600 to-purple-600 mb-6">
+          {/* <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-red-600 to-purple-600 mb-6">
             <Lightbulb size={40} className="text-white" />
-          </div>
+          </div> */}
           <h1 className="text-3xl md:text-4xl mb-6 text-gray-900">Future Projects</h1>
           <p className="text-xl text-gray-500 max-w-3xl mx-auto">
             Visionary concepts and ambitious initiatives that will shape the future of our storytelling
@@ -230,7 +233,7 @@ forces that confine them…`,
         </div>
 
         {/* Introduction */}
-        <div className="bg-gray-50 border border-gray-200 rounded-lg p-8 md:p-12 mb-16">
+        {/* <div className="bg-gray-50 border border-gray-200 rounded-lg p-8 md:p-12 mb-16">
           <h2 className="text-3xl mb-6 text-gray-900">Our Vision for Tomorrow</h2>
           <div className="text-gray-600 space-y-4">
             <p>
@@ -244,7 +247,7 @@ forces that confine them…`,
               power of compelling narratives.
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* Future Projects */}
         <div className="space-y-8">
@@ -268,7 +271,7 @@ forces that confine them…`,
     <div className="md:col-span-10 p-8 md:p-10">
       <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
         <div>
-          <h2 className="text-3xl mb-2">{project.title}</h2>
+          <h2 className="text-2xl mb-2">{project.title}</h2>
           <p className="text-red-600">{project.type}</p>
           <p className="text-red-600">{project.director}</p>
           <p className="text-red-600">{project.Writer}</p>
@@ -277,7 +280,7 @@ forces that confine them…`,
           {/* <Badge className="bg-purple-600/20 text-purple-600 border-purple-400/30">
             {project.status}
           </Badge> */}
-          <span className="text-sm text-gray-500">{project.timeline}</span>
+          {/* <span className="text-sm text-gray-500">{project.timeline}</span> */}
         </div>
       </div>
 
@@ -292,7 +295,7 @@ forces that confine them…`,
         </div>
 
         {/* Investment & Partnerships */}
-        <div className="mt-20 grid md:grid-cols-2 gap-8">
+        {/* <div className="mt-20 grid md:grid-cols-2 gap-8">
           <Card className="bg-gradient-to-br from-red-50 to-purple-50 border-red-200 shadow-md">
             <CardContent className="p-8">
               <h3 className="text-2xl mb-4 text-gray-900">Looking for Investment Partners</h3>
@@ -318,7 +321,7 @@ forces that confine them…`,
               </button>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
 
         {/* Timeline */}
         <div className="mt-20">
@@ -329,16 +332,27 @@ forces that confine them…`,
               {['2025', '2026', '2027', '2028', '2030'].map((year, index) => (
                 <div key={year} className="flex items-center justify-center">
                   <div className="w-1/2 text-right pr-8">
-                    {index % 2 === 0 && (
-                      <span className="text-gray-500">Multiple projects in development</span>
+                    {index % 5 === 0 && (
+                      <span className="text-gray-500">Foundation & Vision Setting</span>
+
                     )}
+                     {index % 5 === 2 && (
+                      <span className="text-gray-500"> Expansion & Innovation</span>
+                      
+                    )}
+                      {index % 5 === 4 && (
+                      <span className="text-gray-500">Legacy & Continuity</span>
+                      
+                    )}
+
                   </div>
+            
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-red-600 to-purple-600 flex items-center justify-center relative z-10">
                     <span className="text-sm text-white">{year}</span>
                   </div>
                   <div className="w-1/2 pl-8">
                     {index % 2 === 1 && (
-                      <span className="text-gray-500">Major releases planned</span>
+                      <span className="text-gray-500"> Global Showcase (Major Releases Planned)</span>
                     )}
                   </div>
                 </div>

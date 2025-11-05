@@ -36,39 +36,41 @@ export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
       <div className="flex justify-between items-center h-16">
         
         {/* Logo and Name */}
-        <div
-          className="cursor-pointer flex items-center space-x-3"
-          onClick={() => handleNavClick('home')}
-        >
-          <img
-            src={logos}
-            alt="Shri Deepmala Films Logo"
-            className="h-12 w-auto object-contain"
-          />
-          <span
-            className="text-lg font-semibold tracking-wide"
-            style={{ color: '#D1A666' }}
-          >
-            SHRI DEEPMALA FILMS
-          </span>
-        </div>
+     <div
+  className="cursor-pointer flex items-center space-x-3"
+  onClick={() => handleNavClick('home')}
+>
+  <img
+    src={logos}
+    alt="Shri Deepmala Films Logo"
+    className="h-12 w-auto object-contain"
+  />
+  <span
+    className="text-lg font-semibold tracking-wide font-serif"
+    style={{ color: '#D1A666' }}
+  >
+    SHRI DEEPMALA FILMS
+  </span>
+</div>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-6">
-          {navItems.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => handleNavClick(item.id)}
-              className={`transition-colors ${
-                currentPage === item.id
-                  ? 'text-red-600'
-                  : 'text-gray-700 hover:text-gray-900'
-              }`}
-            >
-              {item.label}
-            </button>
-          ))}
-        </div>
+
+       {/* Desktop Navigation */}
+<div className="hidden md:flex items-center space-x-6">
+  {navItems.map((item) => (
+    <button
+      key={item.id}
+      onClick={() => handleNavClick(item.id)}
+      className={`text-md transition-colors ${
+        currentPage === item.id
+          ? 'text-red-600'
+          : 'text-gray-700 hover:text-gray-900'
+      }`}
+    >
+      {item.label}
+    </button>
+  ))}
+</div>
+
 
         {/* Mobile Menu Button */}
         <button

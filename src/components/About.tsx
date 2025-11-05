@@ -9,7 +9,7 @@ export function About() {
   const directors = [
     {
       id: 1,
-      name: 'Rajesh Deep Mala Srivastava',
+      name: 'Deep Mala Srivastava',
       role: 'Founder & Creative Director',
       bio: `Born and raised in a small village in the Deoria district of Uttar Pradesh, Deep Mala
 Srivastava is a self-made creative visionary whose journey reflects passion,
@@ -61,8 +61,8 @@ happen.`    ,
     },
     {
       icon: Target,
-      title: 'Audience Focus',
-      description: 'We create content that resonates with audiences and stands the test of time.',
+      title: 'Demand of the time ',
+      description: 'reating cinema that reflects today’s pulse and tomorrow’s vision.',
     },
   ];
 
@@ -71,9 +71,9 @@ happen.`    ,
       {/* Company Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
         <div className="text-center mb-16">
-          <h1 className="text-3xl md:text-4xl mb-6 text-gray-900">About Filmhouse Productions</h1>
+          <h1 className="text-2xl md:text-4xl mb-6 text-gray-900">About Company</h1>
           <p className="text-xl text-gray-500 max-w-3xl mx-auto">
-            Creating cinematic masterpieces that inspire, entertain, and transform
+          Welcome to Shrideepmala Films Pvt. Ltd. Founded by Ms. Deep Mala Srivastava and Mr. Anil Dhakad
           </p>
         </div>
 
@@ -86,12 +86,9 @@ happen.`    ,
             />
           </div>
           <div>
-            <h2 className="text-4xl mb-6 text-gray-900">Our Story</h2>
+       
             <div className="space-y-4 text-gray-600">
-              <b>Welcome to Shrideepmala Films Pvt. Ltd.</b>
-              <b>
-              Founded by Ms. Deep Mala Srivastava and Mr. Anil Dhakad
-              </b>
+              
               <p>
               At Shrideepmala Films Pvt. Ltd., creativity meets precision and every frame
 becomes a work of art. As a forward-thinking film production company, we specialize
@@ -141,7 +138,7 @@ inspire, and resonate with audiences worldwide.
       <section className="bg-gray-50 py-20">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="text-center mb-16">
-      <h2 className="text-4xl mb-4 text-gray-900">Meet Our Directors</h2>
+      <h2 className="text-4xl mb-4 text-gray-900">Meet Directors</h2>
       <p className="text-gray-500">Visionaries behind our storytelling</p>
     </div>
 
@@ -164,9 +161,7 @@ inspire, and resonate with audiences worldwide.
 
             {/* Content: Full width on mobile, 3/5 on desktop */}
             <CardContent className="md:col-span-3 p-8 flex flex-col justify-center">
-              <div className="inline-block px-3 py-1 bg-red-600/20 text-red-600 text-sm mb-4 w-fit rounded">
-                {director.awards}
-              </div>
+             
               <h3 className="text-3xl mb-2 text-gray-900">{director.name}</h3>
               <p className="text-red-600 mb-6">{director.role}</p>
               <p className="text-gray-600 leading-relaxed">{director.bio}</p>

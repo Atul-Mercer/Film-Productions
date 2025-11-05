@@ -13,7 +13,7 @@ export function UpcomingProjects() {
     {
       id: 1,
       title: 'Another Shade Of Yellow',
-      type: 'Feature Film',
+      type: 'Short Film',
       genre: 'Suspense',
       releaseDate: 'March 2025',
       status: 'Post-Production',
@@ -26,7 +26,7 @@ export function UpcomingProjects() {
     {
       id: 2,
       title: 'Shubh Deepawali',
-      type: 'Film',
+      type: 'Short Film',
       genre: ' Family Drama',
       releaseDate: 'April 2025',
       status: 'Filming',
@@ -69,7 +69,7 @@ export function UpcomingProjects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-3xl md:text-4xl mb-6 text-gray-900">Upcoming Projects</h1>
+          <h1 className="text-4xl md:text-4xl mb-6 text-gray-900">Upcoming Projects</h1>
           <p className="text-xl text-gray-500 max-w-3xl mx-auto">
             Get a sneak peek at our exciting lineup of films, series, and special projects
           </p>
@@ -82,9 +82,9 @@ export function UpcomingProjects() {
               key={project.id} 
               className="bg-white border-gray-200 overflow-hidden hover:shadow-xl transition-all"
             >
-              <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}>
+              <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 2 ? 'md:grid-flow-dense' : ''}`}>
                 {/* Image Section */}
-                <div className={`relative h-96 md:h-auto ${index % 2 === 1 ? 'md:col-start-2' : ''}`}>
+                <div className={`relative h-96 md:h-auto ${index % 2 === 2 ? 'md:col-start-2' : ''}`}>
                   <ImageWithFallback
                     src={project.image}
                     alt={project.title}
@@ -93,9 +93,7 @@ export function UpcomingProjects() {
                   
                   {/* Status Badge */}
                   <div className="absolute top-4 left-4">
-                    <Badge className="bg-red-600 text-white hover:bg-red-700">
-                      {project.status}
-                    </Badge>
+                 
                   </div>
 
                   {/* Media Icons */}
@@ -122,17 +120,10 @@ export function UpcomingProjects() {
                     </Badge>
                   </div>
 
-                  <h2 className="text-4xl mb-4 text-gray-900">{project.title}</h2>
+                  <h2 className="text-2xl mb-4 text-gray-900">{project.title}</h2>
                   
                   <div className="flex flex-wrap gap-4 text-sm text-gray-500 mb-6">
-                    <div className="flex items-center gap-2">
-                      <Calendar size={16} />
-                      <span>{project.releaseDate}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Clock size={16} />
-                      <span>{project.duration}</span>
-                    </div>
+                 
                   </div>
 
                   <p className="text-gray-600 mb-6 leading-relaxed">
@@ -140,7 +131,7 @@ export function UpcomingProjects() {
                   </p>
 
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">Directed by <span className="text-red-600">{project.director}</span></span>
+                    <span className="text-sm text-gray-500">Written & Directed by <span className="text-red-600">{project.director}</span></span>
                     {/* <button className="px-6 py-2 bg-red-600 text-white hover:bg-red-700 transition-colors rounded">
                       Learn More
                     </button> */}
