@@ -31,7 +31,6 @@ export function Footer({ setCurrentPage }: FooterProps) {
 
   const handleNavClick = (id: string) => {
     setCurrentPage(id); 
-    // Smooth scroll to the top of the page when a footer link is clicked
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -46,32 +45,32 @@ export function Footer({ setCurrentPage }: FooterProps) {
   const brandColor = '#D1A666';
 
   return (
-    <footer className="bg-black text-white pt-10 pb-6">
-    {/* Increased horizontal padding on the outer container if needed (px-4 is standard) */}
+    <footer className="bg-black text-white pt-6 pb-4 "> {/* ⬅️ CHANGE: Reduced pt-10 to pt-6 and pb-6 to pb-4 */}
+    {/* Ensure px-6 sm:px-8 lg:px-10 is providing enough side margin */}
     <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10"> 
         
-        {/* Main 4-Column Grid with Reduced Space */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mt-12"> {/* ⬅️ CHANGE: Reduced gap-6 to gap-4 and md:gap-8 to md:gap-6 */}
+        {/* Main 4-Column Grid: Vertical spacing reduced with mt-8 */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8"> {/* ⬅️ CHANGE: Reduced mt-12 to mt-8 */}
 
             
             {/* Column 1: Logo and About Company */}
             <div className="md:col-span-1 "> 
-                {/* Logo and Name Style (Copied from Header) */}
-                <div className="flex items-center space-x-3 mb-4 ">
+                {/* Logo and Name Style */}
+                <div className="flex items-center space-x-3 mb-3 "> {/* Reduced mb-4 to mb-3 */}
                     <img
                         src={logos}
                         alt="Shri Deepmala Films Logo"
                         className="h-12 w-auto object-contain" 
                     />
                     <span
-                        className="text-lg font-semibold tracking-wide text-white" 
+                        className="text-base font-semibold tracking-wide text-white" 
                         style={{ color: brandColor }}
                     >
                         SHRI DEEPMALA FILMS
                     </span>
                 </div>
                 
-                <p className="text-sm text-gray-300">
+                <p className="text-xs text-gray-300"> 
                     Shri Deepmala Films is committed to producing high-quality and compelling
                     cinema, web series, and visual content, bringing captivating stories to life on screen.
                 </p>
@@ -79,13 +78,13 @@ export function Footer({ setCurrentPage }: FooterProps) {
 
     {/* Column 3: Quick Links (Pages) */}
     <div className="md:col-span-1 ">
-                <h3 className="text-xl font-semibold mb-4 text-white">Quick Links 🔗</h3>
-                <ul className="space-y-2">
+                <h3 className="text-lg font-semibold mb-3 text-white">Quick Links 🔗</h3> {/* Reduced mb-4 to mb-3 */}
+                <ul className="space-y-1"> 
                     {navItems.map((item) => (
                         <li key={item.id}>
                             <button
                                 onClick={() => handleNavClick(item.id)}
-                                className="text-sm text-gray-300 hover:text-red-600 transition-colors cursor-pointer"
+                                className="text-xs text-gray-300 hover:text-red-600 transition-colors cursor-pointer"
                             >
                                 {item.label}
                             </button>
@@ -97,17 +96,17 @@ export function Footer({ setCurrentPage }: FooterProps) {
 
             {/* Column 4: Social Media Links (Icon and Text Row-Wise) */}
             <div className="md:col-span-1">
-                <h3 className="text-xl font-semibold mb-4 text-white">Follow Us 📱</h3>
-                <ul className="space-y-3">
+                <h3 className="text-lg font-semibold mb-3 text-white">Follow Us 📱</h3> {/* Reduced mb-4 to mb-3 */}
+                <ul className="space-y-2"> 
                     {socialLinks.map((social) => (
                         <li key={social.name}>
                             <a
                                 href={social.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`flex items-center text-sm text-gray-300 ${social.color} transition-colors`}
+                                className={`flex items-center text-xs text-gray-300 ${social.color} transition-colors`}
                             > 
-                                <social.icon size={25} className="mr-3 flex-shrink-0" />
+                                <social.icon size={20} className="mr-2 flex-shrink-0" />
                                 <span>{social.name}</span>
                             </a>
                         </li>
@@ -116,18 +115,14 @@ export function Footer({ setCurrentPage }: FooterProps) {
             </div>
 
 
-        
-
-
             
             {/* Column 2: Contact Information - TIGHTENED SPACING */}
             <div className="md:col-span-1">
-                <h3 className="text-xl font-semibold mb-4 text-white">Contact Us 📞</h3>
-                <ul className="space-y-2 text-sm"> {/* ⬅️ CHANGE: Reduced space-y-4 to space-y-2 */}
+                <h3 className="text-lg font-semibold mb-3 text-white">Contact Us 📞</h3> {/* Reduced mb-4 to mb-3 */}
+                <ul className="space-y-1 text-xs"> 
                     {contactInfo.map((item, index) => (
                         <li key={index} className="flex items-start text-gray-300">
-                            {/* The margin top here is crucial for vertical alignment with multi-line text */}
-                            <item.icon size={18} className="mr-3 mt-0.5 text-red-600 flex-shrink-0" /> 
+                            <item.icon size={16} className="mr-2 mt-0.5 flex-shrink-0" /> 
                             {item.isLink ? (
                                 <a href={item.href} className="hover:text-red-600 transition-colors">
                                     {item.text}
@@ -145,9 +140,9 @@ export function Footer({ setCurrentPage }: FooterProps) {
         {/* --- */}
         
         {/* Copyright Section */}
-        <div className="mt-10 pt-6 border-t border-gray-700 text-center">
-            <p className="text-sm text-gray-500">
-                &copy; {new Date().getFullYear()} Copyright ©️ 2025 Shrideepmala Films Pvt. Ltd. All Rights Reserved.
+        <div className="mt-6 pt-4 border-t border-gray-700 text-center"> {/* ⬅️ CHANGE: Reduced mt-10 to mt-6 and pt-6 to pt-4 */}
+            <p className="text-xs text-gray-500">
+                &copy; {new Date().getFullYear()} Copyright  Shrideepmala Films Pvt. Ltd. All Rights Reserved.
             </p>
         </div>
     </div>

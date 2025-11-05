@@ -203,7 +203,7 @@ forces that confine them…`,
       image: THELIVES,
       timeline: '2025-2026',
       description: 'Who is truly right-me, or the other person? In today’s world, everyone is desperate to prove themselves right and others wrong. The most unsettling truth, however, is that people no longer seek honesty; they seek justification. They live wrapped in the comfort of their own delusions. This is the story of Sumit - a young man caught in that same web of self-righteousness and confusion. As he found out something about his girlfriend that relationship begins to crumble, he confronts not just his girlfriend’s truths, but his own.',
-        director: 'Director : Deep Mala Srivastava',
+        director: 'Directors : Deep Mala Srivastava',
         Writer : 'Writer : Ankit Srivastava & Deep Mala',
       highlights: [
         'AI-driven narrative branching',
@@ -325,42 +325,77 @@ forces that confine them…`,
 
         {/* Timeline */}
         <div className="mt-20">
-          <h2 className="text-4xl mb-12 text-center text-gray-900">Development Timeline</h2>
-          <div className="relative">
-            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-600 via-purple-600 to-blue-600" />
-            <div className="space-y-8">
-              {['2026', '2027', '2028', '2029', '2030'].map((year, index) => (
+    <h2 className="text-4xl mb-12 text-center text-gray-900">Development Timeline</h2>
+    <div className="relative">
+        <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-600 via-purple-600 to-blue-600" />
+        <div className="space-y-8">
+            {['2025', '2026', '2027', '2028', '2029'].map((year, index) => (
                 <div key={year} className="flex items-center justify-center">
-                  <div className="w-1/2 text-right pr-8">
-                    {index % 5 === 0 && (
-                      <p className="black">Foundation & Vision Setting <br></br>  <p className="text-sm">Multiple short films and concept-driven projects under development, including “Ambika”, songs “Aa gaye saawariya . And our Hindi-Bhojpuri-spanish language special no. ”A Kareja”</p></p>
-                     
-
-                    )}
-                     {index % 5 === 2 && (
-                      <span className="text-black"> Expansion & Innovation  <br></br>  <p className="text-sm"><br></br>  <p className="text-sm">Development of two cross-genre films exploring human emotion through “Navarasa.”, Strengthening in-house creative lab for writers, composers, and editors, Participation in global co-production markets, Focus on building an international audience and critical recognition.f</p></p></span>
-                      
-                    )}
-                      {index % 5 === 4 && (
-                      <span className="text-black">Legacy & Continuity <br /> <p>Multiple projects in active development and release pipeline. Aim to be recognized as a cross-cultural cinematic voice from Bharat. Continued presence in international film festivals, solidifying global recognition.</p></span>
-                      
-                    )}
-
-                  </div>
+                    <div className="w-1/2 text-right pr-8">
+                        {/* ✅ 2026 (Index 0) - Breakthrough Year */}
+                        {index === 0 && (
+                            <p className="black">
+                                Breakthrough Year (Major Releases Planned)
+                                <br />
+                                <p className="text-sm">
+                                    First slate of feature-length psychological and social thrillers to enter production. Making of films COK and HOP, Strategic collaborations with international producers and distributors. Targeted premieres: Cannes Short Film Corner, Berlinale Talents, and Busan Film Festival.
+                                </p>
+                            </p>
+                        )}
+                        
+                        {/* 2028 (Index 2) - Expansion & Innovation */}
+                        {index === 2 && (
+                            <span className="text-black">
+                                Expansion & Innovation
+                                <br />
+                                <p className="text-sm">
+                                    Development of two cross-genre films exploring human emotion through “Navarasa.”, Strengthening in-house creative lab for writers, composers, and editors, Participation in global co-production markets, Focus on building an international audience and critical recognition.f
+                                </p>
+                            </span>
+                        )}
+                        
+                        {/* 2030 (Index 4) - Legacy & Continuity */}
+                        {index === 4 && (
+                            <span className="text-black">
+                                Legacy & Continuity <br />
+                                <p>
+                                    Multiple projects in active development and release pipeline. Aim to be recognized as a cross-cultural cinematic voice from Bharat. Continued presence in international film festivals, solidifying global recognition.
+                                </p>
+                            </span>
+                        )}
+                    </div>
             
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-red-600 to-purple-600 flex items-center justify-center relative z-10">
-                    <span className="text-sm text-white">{year}</span>
-                  </div>
-                  <div className="w-1/2 pl-8">
-                    {index % 2 === 1 && (
-                      <span className="text-black"> Global Showcase (Major Releases Planned)  <br></br>  <p className="text-sm"> two international co-productions. Premieres at Toronto International Film Festival, Sundance, and Locarno, Establishment of Shri Deepmala Films International Wing for overseas production and festival outreach, Expansion into branded short content and art cum Commercial film collaborations.</p></span>
-                    )}
-                  </div>
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-red-600 to-purple-600 flex items-center justify-center relative z-10">
+                        <span className="text-sm text-white">{year}</span>
+                    </div>
+                    
+                    <div className="w-1/2 pl-8">
+                        {/* 2027 (Index 1) - Global Showcase */}
+                        {index === 1 && (
+                            <span className="text-black">
+                                Global Showcase (Major Releases Planned)
+                                <br />
+                                <p className="text-sm">
+                                    two international co-productions. Premieres at Toronto International Film Festival, Sundance, and Locarno, Establishment of Shri Deepmala Films International Wing for overseas production and festival outreach, Expansion into branded short content and art cum Commercial film collaborations.
+                                </p>
+                            </span>
+                        )}
+                          {index === 3 && (
+                            <span className="text-black">
+                               Breakthrough Year (Major Releases Planned)
+
+                                <br />
+                                <p className="text-sm">
+                                First slate of feature-length psychological and social thrillers to enter production. Making of films COK and HOP, Strategic collaborations with international producers and distributors. Targeted premieres: Cannes Short Film Corner, Berlinale Talents, and Busan Film Festival.
+                                </p>
+                            </span>
+                        )}
+                    </div>
                 </div>
-              ))}
-            </div>
-          </div>
+            ))}
         </div>
+    </div>
+</div>
       </div>
     </div>
   );
