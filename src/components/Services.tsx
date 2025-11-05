@@ -143,9 +143,9 @@ export function Services() {
         {/* Header (No change needed here) */}
         <div className="text-center mb-16">
           <h1 className="text-3xl md:text-4xl mb-6 text-gray-900">Our Services</h1>
-          <p className="text-xl text-gray-500 max-w-3xl mx-auto">
+          <i className="text-xl text-gray-500 max-w-3xl mx-auto">
             Comprehensive production services tailored to bring your creative vision to life
-          </p>
+          </i>
         </div>
 
         {/* Introduction (No change needed here) */}

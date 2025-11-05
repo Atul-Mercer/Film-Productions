@@ -46,7 +46,7 @@ export function Home() {
       genre: 'Youtube Video',
       rating: 8.2,
       description:
-        'Tighten your belt, open your eyes — let the river of change flow, Let’s walk together to rewrite history and bring back the golden glory.',
+        'Tighten your belt, open your eyes  let the river of change flow, Let’s walk together to rewrite history and bring back the golden glory.',
       image: UNKNOWN,
       link: 'https://www.youtube.com/watch?v=UIkfe753yzY',
     },
@@ -57,7 +57,7 @@ export function Home() {
       genre: 'Youtube Video',
       rating: 9.1,
       description:
-        'The heart didn’t break — it just fell silent. There was no love, yet the memories overflowed.',
+        'The heart didn’t break  it just fell silent. There was no love, yet the memories overflowed.',
       image: KAREGA,
       link: 'https://www.youtube.com/watch?v=RiO3Q2Fw4GI',
     },
@@ -175,7 +175,7 @@ export function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl mb-6 text-gray-900">Crafting Stories That Matter</h2>
-              <div className="space-y-4 text-gray-600">
+              <div className="space-y-4 text-gray-600 text-sm">
                 <p>
                   Welcome to Shri Deepmala Films - a creative sanctuary where stories are born from emotion and sculpted into moving experiences. We are a visionary film production house devoted to crafting cinema that transcends borders, languages, and cultures. At the heart of our storytelling lies the timeless essence of Navarasa - the nine emotions that define the human experience: love, laughter, sorrow, anger, courage, fear, disgust, wonder, and peace.
                 </p>
@@ -217,8 +217,8 @@ export function Home() {
                 rel="noopener noreferrer"
                 className="block group"
               >
-                <Card className="bg-white border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300">
-                  <div className="relative h-80 overflow-hidden">
+                <Card className="bg-white border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 ">
+                  <div className="relative h-50 overflow-hidden">
                     <ImageWithFallback
                       src={movie.image}
                       alt={movie.title}
@@ -230,8 +230,8 @@ export function Home() {
                       <Calendar size={14} />
                       {movie.genre}
                     </div>
-                    <h3 className="text-2xl mb-3 text-gray-900 font-semibold">{movie.title}</h3>
-                    <p className="text-gray-600 mb-4">{movie.description}</p>
+                    <h3 className="text-xl mb-3 text-gray-900 font-semibold">{movie.title}</h3>
+                    <p className="text-gray-600 mb-4 text-sm">{movie.description}</p>
                     <span className="text-red-600 hover:text-red-500 transition-colors flex items-center gap-2">
                       Watch Now
                     </span>

@@ -401,7 +401,7 @@
   }
 
   body {
-    background-color: var(--background);
+    background-color: black;
     color: var(--foreground);
   }
 
@@ -1246,7 +1246,7 @@
   }
 
   .py-20 {
-    padding-block: calc(var(--spacing) * 20);
+    padding-block: calc(var(--spacing) * 10);
   }
 
   .pt-6 {
@@ -1384,7 +1384,7 @@
   }
 
   .text-gray-900 {
-    color: var(--color-gray-900);
+    color: black;
   }
 
   .text-muted-foreground {

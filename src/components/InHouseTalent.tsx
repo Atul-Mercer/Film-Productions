@@ -30,9 +30,9 @@ export function InHouseTalent() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold text-black mb-4">In-House Talents</h1>
-          <p className="text-gray-400 text-lg">
+          <i className="text-gray-400 text-lg">
             Meet our talented artists who bring creativity to life.
-          </p>
+          </i>
         </div>
 
         {/* Talent Grid */}

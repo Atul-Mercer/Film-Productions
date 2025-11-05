@@ -17,19 +17,20 @@ export function Contact() {
   };
 
   return (
-    <div className="min-h-screen py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-16 md:py-24 bg-white ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
 
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Get in Touch</h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <br /><br />
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4  " >Get in Touch</h1>
+          <i className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Have a project in mind? We'd love to hear from you. Let's create something extraordinary together.
-          </p>
+          </i>
         </div>
 
         {/* ========== CENTERED CONTACT FORM ========== */}
-        <div className="flex justify-center mb-20">
+        <div className="flex justify-center mb-20 ">
           <div className="w-full max-w-3xl">
             <Card className="bg-white border-gray-200 shadow-xl rounded-2xl overflow-hidden">
               <CardContent className="p-8 md:p-12">
@@ -211,8 +212,8 @@ export function Contact() {
 </div>
 
         {/* ========== ADDITIONAL INFO CARDS (Optional) ========== */}
-        <div className="mt-20 grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <Card className="text-center bg-white shadow-lg hover:shadow-xl transition-shadow">
+        <div className="mt-20 grid md:grid-cols-3 gap-8 max-w-6xl mx-auto ">
+          <Card className="text-center bg-white shadow-lg hover:shadow-xl transition-shadow mb-12">
             <CardContent className="p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Production Inquiries</h3>
               <p className="text-gray-600 mb-4 text-sm">For film and series production opportunities</p>
@@ -222,7 +223,7 @@ export function Contact() {
             </CardContent>
           </Card>
 
-          <Card className="text-center bg-white shadow-lg hover:shadow-xl transition-shadow">
+          <Card className="text-center bg-white shadow-lg hover:shadow-xl transition-shadow mb-12">
             <CardContent className="p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Casting & Talent</h3>
               <p className="text-gray-600 mb-4 text-sm">Submit your profile or casting inquiries</p>
@@ -232,7 +233,7 @@ export function Contact() {
             </CardContent>
           </Card>
 
-          <Card className="text-center bg-white shadow-lg hover:shadow-xl transition-shadow">
+          <Card className="text-center bg-white shadow-lg hover:shadow-xl transition-shadow mb-12">
             <CardContent className="p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Media & Press</h3>
               <p className="text-gray-600 mb-4 text-sm">Press releases and media inquiries</p>

@@ -152,8 +152,8 @@ suffering. When fear spreads too much, something
 has to be done, the women must decide: will they
 continue to endure, or will they rise against the
 forces that confine them…`,
-        director: 'Director : Deep Mala Srivastava',
-        Writer : 'Writer : Deep Mala & Durg Raj Alok Darshi',
+        director: 'Director : Deep Mala Srivastava & Durg Raj Alok Darshi',
+        Writer : 'Writer : Deep Mala ',
       highlights: [
         'AI-driven narrative branching',
         'VR/AR integration',
@@ -227,9 +227,9 @@ forces that confine them…`,
             <Lightbulb size={40} className="text-white" />
           </div> */}
           <h1 className="text-3xl md:text-4xl mb-6 text-gray-900">Future Projects</h1>
-          <p className="text-xl text-gray-500 max-w-3xl mx-auto">
-            Visionary concepts and ambitious initiatives that will shape the future of our storytelling
-          </p>
+          <i className="text-md text-gray-500 max-w-3xl mx-auto">
+          Interested in collaborating on these ambitious projects? We're open to partnerships with Financiers technicians, and creative visionaries. And also writers, directors can reach to us with their projects.
+          </i>
         </div>
 
         {/* Introduction */}
@@ -284,7 +284,7 @@ forces that confine them…`,
         </div>
       </div>
 
-      <p className="text-gray-600 mb-6 leading-relaxed">
+      <p className="text-gray-600 mb-6 leading-relaxed text-sm">
         {project.description}
       </p>
     </div>
@@ -329,19 +329,20 @@ forces that confine them…`,
           <div className="relative">
             <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-600 via-purple-600 to-blue-600" />
             <div className="space-y-8">
-              {['2025', '2026', '2027', '2028', '2030'].map((year, index) => (
+              {['2026', '2027', '2028', '2029', '2030'].map((year, index) => (
                 <div key={year} className="flex items-center justify-center">
                   <div className="w-1/2 text-right pr-8">
                     {index % 5 === 0 && (
-                      <span className="text-gray-500">Foundation & Vision Setting</span>
+                      <p className="black">Foundation & Vision Setting <br></br>  <p className="text-sm">Multiple short films and concept-driven projects under development, including “Ambika”, songs “Aa gaye saawariya . And our Hindi-Bhojpuri-spanish language special no. ”A Kareja”</p></p>
+                     
 
                     )}
                      {index % 5 === 2 && (
-                      <span className="text-gray-500"> Expansion & Innovation</span>
+                      <span className="text-black"> Expansion & Innovation  <br></br>  <p className="text-sm"><br></br>  <p className="text-sm">Development of two cross-genre films exploring human emotion through “Navarasa.”, Strengthening in-house creative lab for writers, composers, and editors, Participation in global co-production markets, Focus on building an international audience and critical recognition.f</p></p></span>
                       
                     )}
                       {index % 5 === 4 && (
-                      <span className="text-gray-500">Legacy & Continuity</span>
+                      <span className="text-black">Legacy & Continuity <br /> <p>Multiple projects in active development and release pipeline. Aim to be recognized as a cross-cultural cinematic voice from Bharat. Continued presence in international film festivals, solidifying global recognition.</p></span>
                       
                     )}
 
@@ -352,7 +353,7 @@ forces that confine them…`,
                   </div>
                   <div className="w-1/2 pl-8">
                     {index % 2 === 1 && (
-                      <span className="text-gray-500"> Global Showcase (Major Releases Planned)</span>
+                      <span className="text-black"> Global Showcase (Major Releases Planned)  <br></br>  <p className="text-sm"> two international co-productions. Premieres at Toronto International Film Festival, Sundance, and Locarno, Establishment of Shri Deepmala Films International Wing for overseas production and festival outreach, Expansion into branded short content and art cum Commercial film collaborations.</p></span>
                     )}
                   </div>
                 </div>

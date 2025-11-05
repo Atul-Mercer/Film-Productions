@@ -70,9 +70,9 @@ export function UpcomingProjects() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-4xl mb-6 text-gray-900">Upcoming Projects</h1>
-          <p className="text-xl text-gray-500 max-w-3xl mx-auto">
+          <i className="text-xl text-gray-500 max-w-3xl mx-auto">
             Get a sneak peek at our exciting lineup of films, series, and special projects
-          </p>
+          </i>
         </div>
 
         {/* Projects Grid */}
@@ -126,7 +126,7 @@ export function UpcomingProjects() {
                  
                   </div>
 
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                  <p className="text-gray-600 mb-6 leading-relaxed text-sm">
                     {project.description}
                   </p>
 

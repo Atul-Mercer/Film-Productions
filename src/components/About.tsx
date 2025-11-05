@@ -69,13 +69,13 @@ happen.`    ,
   return (
     <div className="min-h-screen py-20 bg-white">
       {/* Company Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
-        <div className="text-center mb-16">
-          <h1 className="text-2xl md:text-4xl mb-6 text-gray-900">About Company</h1>
-          <p className="text-xl text-gray-500 max-w-3xl mx-auto">
-          Welcome to Shrideepmala Films Pvt. Ltd. Founded by Ms. Deep Mala Srivastava and Mr. Anil Dhakad
-          </p>
-        </div>
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+      <div className="text-center mb-16 "> {/* ⬅️ ADDED: -mt-[60px] */}
+    <h1 className="text-2xl md:text-4xl mb-6 text-gray-900">The Company</h1>
+    <i className="text-xl text-gray-500 max-w-3xl mx-auto ">
+        Welcome to Shrideepmala Films Pvt. Ltd. Founded by Ms. Deep Mala Srivastava and Mr. Anil Dhakad
+    </i>
+</div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <div className="relative h-[600px]">
@@ -87,7 +87,7 @@ happen.`    ,
           </div>
           <div>
        
-            <div className="space-y-4 text-gray-600">
+            <div className="space-y-4 text-gray-600 text-sm">
               
               <p>
               At Shrideepmala Films Pvt. Ltd., creativity meets precision and every frame
@@ -116,7 +116,7 @@ inspire, and resonate with audiences worldwide.
         </div>
 
         {/* Company Values */}
-        <div className="mb-20">
+        <div className="mb-12 ">
           <h2 className="text-4xl mb-12 text-center text-gray-900">Our Core Values</h2>
           <div className="grid md:grid-cols-4 gap-8">
             {values.map((value, index) => (
@@ -126,7 +126,7 @@ inspire, and resonate with audiences worldwide.
                     <value.icon size={32} className="text-red-600" />
                   </div>
                   <h3 className="text-xl mb-3 text-gray-900">{value.title}</h3>
-                  <p className="text-gray-500">{value.description}</p>
+                  <p className="text-gray-500 text-sm">{value.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -138,7 +138,7 @@ inspire, and resonate with audiences worldwide.
       <section className="bg-gray-50 py-20">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="text-center mb-16">
-      <h2 className="text-4xl mb-4 text-gray-900">Meet Directors</h2>
+      <h2 className="text-4xl mb-4 text-gray-900">Our Directors</h2>
       <p className="text-gray-500">Visionaries behind our storytelling</p>
     </div>
 
@@ -164,7 +164,7 @@ inspire, and resonate with audiences worldwide.
              
               <h3 className="text-3xl mb-2 text-gray-900">{director.name}</h3>
               <p className="text-red-600 mb-6">{director.role}</p>
-              <p className="text-gray-600 leading-relaxed">{director.bio}</p>
+              <p className="text-gray-600 leading-relaxed text-sm">{director.bio}</p>
             </CardContent>
           </div>
         </Card>
