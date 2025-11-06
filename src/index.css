@@ -74,7 +74,7 @@
     --color-red-50: oklch(.971 .013 17.38);
     --color-red-200: oklch(.885 .062 18.334);
     --color-red-500: oklch(.637 .237 25.331);
-    --color-red-600: oklch(.577 .245 27.325);
+    --color-red-600: oklch(0.65 0.12 90);
     --color-red-700: oklch(.505 .213 27.518);
     --color-yellow-500: oklch(.795 .184 86.047);
     --color-blue-50: oklch(.97 .014 254.604);
@@ -82,7 +82,7 @@
     --color-purple-50: oklch(.977 .014 308.299);
     --color-purple-200: oklch(.902 .063 306.703);
     --color-purple-400: oklch(.714 .203 305.504);
-    --color-purple-600: oklch(.558 .288 302.321);
+    --color-purple-600: oklch(0.85 0.15 105)
     --color-purple-700: oklch(.496 .265 301.924);
     --color-gray-50: oklch(.985 .002 247.839);
     --color-gray-100: oklch(.967 .003 264.542);

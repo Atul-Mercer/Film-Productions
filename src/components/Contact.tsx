@@ -114,9 +114,9 @@ export function Contact() {
                   <div className="flex justify-center">
                   <button
   type="submit"
-  className="w-full max-w-md mx-auto px-12 py-5 bg-red-600 text-white font-bold text-lg rounded-xl shadow-xl hover:bg-red-700 hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group"
+  className="w-50% max-w-sm mx-auto px-8 py-3 bg-red-600 text-white font-bold text-base rounded-xl shadow-xl hover:bg-red-700 hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group"
 >
-  <Send size={22} className="group-hover:translate-x-1 transition-transform" />
+  <Send size={20} className="group-hover:translate-x-1 transition-transform" />
   Send Message
 </button>
                   </div>
@@ -153,12 +153,12 @@ export function Contact() {
         <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-red-600/10 flex items-center justify-center">
           <MapPin className="text-red-600" size={28} />
         </div>
-        <h3 className="font-semibold text-gray-900 mb-2">UP Office</h3>
+        <h3 className="font-semibold text-gray-900 mb-2">Regional Office</h3>
         <p className="text-sm text-gray-600 leading-relaxed">
           SHRIDEEPMALA FILMS PRIVATE LIMITED<br />
           Plot No. -9, Durgapuri Colony<br />
           Nr. Springdale, Malhaur B.O,<br />
-          Durga Puri, Lucknow - 226028
+          Durga Puri, Lucknow(UP) - 226028
         </p>
       </CardContent>
     </Card>

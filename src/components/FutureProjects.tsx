@@ -327,18 +327,18 @@ forces that confine them…`,
         <div className="mt-20">
     <h2 className="text-4xl mb-12 text-center text-gray-900">Development Timeline</h2>
     <div className="relative">
-        <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-600 via-purple-600 to-blue-600" />
+        <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-600 " />
         <div className="space-y-8">
-            {['2025', '2026', '2027', '2028', '2029'].map((year, index) => (
+            {['2026', '2027', '2028', '2029','2030'].map((year, index) => (
                 <div key={year} className="flex items-center justify-center">
                     <div className="w-1/2 text-right pr-8">
                         {/* ✅ 2026 (Index 0) - Breakthrough Year */}
                         {index === 0 && (
                             <p className="black">
-                                Breakthrough Year (Major Releases Planned)
+                               Foundation & Vision Setting
                                 <br />
                                 <p className="text-sm">
-                                    First slate of feature-length psychological and social thrillers to enter production. Making of films COK and HOP, Strategic collaborations with international producers and distributors. Targeted premieres: Cannes Short Film Corner, Berlinale Talents, and Busan Film Festival.
+                                Multiple short films and concept-driven projects under development, including “Ambika”, songs “Aa gaye saawariya . And our Hindi-Bhojpuri-spanish language special no. ”A Kareja”
                                 </p>
                             </p>
                         )}

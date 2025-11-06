@@ -78,7 +78,7 @@ happen.`    ,
 </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-          <div className="relative h-[400px]">
+          <div className="relative h-[00px]">
             <ImageWithFallback
               src={OurStory}
               alt="Production Set"
@@ -151,8 +151,7 @@ inspire, and resonate with audiences worldwide.
         >
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
             {/* Image: Full width on mobile, 2/5 on desktop */}
-            {/* <div className="md:col-span-2 h-80 md:h-auto"> */}
-            <div className="">
+            <div className="md:col-span-2 h-80 md:h-auto">
               <ImageWithFallback
                 src={director.image}
                 alt={director.name}
