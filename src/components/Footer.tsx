@@ -54,44 +54,46 @@ export function Footer({ setCurrentPage }: FooterProps) {
 
             
             {/* Column 1: Logo and About Company */}
-            <div className="md:col-span-1 text-center ">
-  {/* Logo and Company Name: Reduced mb-4 to mb-2 */}
-  <div className="flex items-center justify-center space-x-3 "> 
-    <img
-      src={logos}
-      alt="Shri Deepmala Films Logo"
-      className="h-12 w-auto object-contain"
-    />
-    <span
-      className="text-base font-semibold tracking-wide text-white"
-      style={{ color: brandColor }}
-    >
-      SHRI DEEPMALA FILMS
-    </span>
-  </div>
+   {/* Column 1: Logo and About Company */}
+{/* Column 1: Logo and About Company */}
+<div className="md:col-span-1 "> 
 
-  {/* Company Description: Reduced mb-8 to mb-4 */}
-  {/* Assuming the parent column div does NOT have text-center applied */}
-<p className="text-xs text-gray-300 max-w-xs mb-4"> 
-    Shri Deepmala Films is committed to producing high-quality <br /> compelling 
-    cinema, web series, and visual content, bringing <br /> captivating stories to life on screen.
-</p>
+    {/* Logo and Company Name: Removed justify-center for left alignment */}
+    <div className="flex items-center space-x-3 mb-2"> 
+        <img
+            src={logos}
+            alt="Shri Deepmala Films Logo"
+            className="h-12 w-auto object-contain" 
+        />
+        <span
+            className="text-base font-semibold tracking-wide text-white"
+            style={{ color: brandColor }}
+        >
+            SHRI DEEPMALA FILMS
+        </span>
+    </div>
 
-  {/* Centered Social Media Icons */}
-  <ul className="flex justify-center gap-6 md:gap-8">
-  {socialLinks.map((social) => (
-    <li key={social.name}>
-      <a
-        href={social.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`flex items-center justify-center text-gray-300 ${social.color} transition-transform hover:scale-125 duration-300`}
-      >
-        <social.icon size={32} className="flex-shrink-0" />
-      </a>
-    </li>
-  ))}
-</ul>
+    {/* Description: Removed width limits (max-w-xs) to ensure it aligns fully to the left edge of the column */}
+    <p className="text-xs text-gray-300 mb-4"> 
+        Shri Deepmala Films is committed to producing high-quality <br /> compelling 
+        cinema, web series, and visual content, bringing <br /> captivating stories to life on screen.
+    </p>
+
+    {/* Social Media Icons: Aligned to the start (left) */}
+    <ul className="flex justify-start gap-4"> {/* Reduced gap */}
+        {socialLinks.map((social) => (
+            <li key={social.name}>
+                <a
+                    href={social.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center justify-start text-gray-300 ${social.color} transition-transform hover:scale-125 duration-300`}
+                >
+                    <social.icon size={28} className="flex-shrink-0" />
+                </a>
+            </li>
+        ))}
+    </ul>
 </div>
 
 
