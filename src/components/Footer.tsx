@@ -71,10 +71,11 @@ export function Footer({ setCurrentPage }: FooterProps) {
   </div>
 
   {/* Company Description: Reduced mb-8 to mb-4 */}
-  <p className="text-xs text-gray-300 max-w-xs mx-auto mb-4">
-    Shri Deepmala Films is committed to producing  high-quality and compelling
-    cinema, web series, and visual content, bringing captivating stories to life on screen.
-  </p>
+  {/* Assuming the parent column div does NOT have text-center applied */}
+<p className="text-xs text-gray-300 max-w-xs mb-4"> 
+    Shri Deepmala Films is committed to producing high-quality <br /> compelling 
+    cinema, web series, and visual content, bringing <br /> captivating stories to life on screen.
+</p>
 
   {/* Centered Social Media Icons */}
   <ul className="flex justify-center gap-6 md:gap-8">

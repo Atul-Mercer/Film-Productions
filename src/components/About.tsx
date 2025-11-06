@@ -6,6 +6,7 @@ import AnilDhakad from '../assets/directors/Anil-Dhakad.jpeg';
 import OurStory from '../assets/story/ourstory.jpg';
 import Biglogo from '../assets/Logo/DEEP.jpg'
 import white from '../assets/Logo/SHRI.png'
+import crop from '../assets/Logo/crop.png'
 
 export function About() {
   const directors = [
@@ -82,9 +83,9 @@ happen.`    ,
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <div className="relative h-[00px]">
             <ImageWithFallback
-              src={Biglogo}
+              src={crop}
               alt="Production Set"
-              className="w-full h-[500px] object-cover rounded-lg shadow-lg"
+              className="w-full h-[px] object-cover rounded-lg shadow-lg"
             />
           </div>
           <div>

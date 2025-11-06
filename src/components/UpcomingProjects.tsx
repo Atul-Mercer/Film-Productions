@@ -34,7 +34,7 @@ export function UpcomingProjects() {
       image: second,
       director: 'Deep Mala Srivastava',
       duration: '8 Episodes',
-      hasVideo: false,
+      hasVideo: true,
     },
     {
       id: 3,
