@@ -4,6 +4,8 @@ import { Award, Users, Film, Target } from 'lucide-react';
 import DeepMala from '../assets/directors/Deep-Mala-Srivastava.jpeg';
 import AnilDhakad from '../assets/directors/Anil-Dhakad.jpeg';
 import OurStory from '../assets/story/ourstory.jpg';
+import Biglogo from '../assets/Logo/DEEP.jpg'
+import white from '../assets/Logo/SHRI.png'
 
 export function About() {
   const directors = [
@@ -80,9 +82,9 @@ happen.`    ,
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <div className="relative h-[00px]">
             <ImageWithFallback
-              src={OurStory}
+              src={Biglogo}
               alt="Production Set"
-              className="w-full h-full object-cover rounded-lg shadow-lg"
+              className="w-full h-[500px] object-cover rounded-lg shadow-lg"
             />
           </div>
           <div>

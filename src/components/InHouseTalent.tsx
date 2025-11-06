@@ -29,7 +29,7 @@ export function InHouseTalent() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl font-bold text-black mb-4">In-House Talents</h1>
+          <h1 className="text-3xl font-bold text-black mb-4 bg-">In-House Talents</h1>
           <i className="text-gray-400 text-lg">
             Meet our talented artists who bring creativity to life.
           </i>

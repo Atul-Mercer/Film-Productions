@@ -228,7 +228,7 @@ forces that confine them…`,
           </div> */}
           <h1 className="text-3xl md:text-4xl mb-6 text-gray-900">Future Projects</h1>
           <i className="text-md text-gray-500 max-w-3xl mx-auto">
-          Interested in collaborating on these ambitious projects? We're open to partnerships with Financiers technicians, and creative visionaries. And also writers, directors can reach to us with their projects.
+          Interested in collaborating on these ambitious projects? We're open to partnerships with Financiers, technicians, and creative visionaries. And also writers, directors can reach to us with their projects.
           </i>
         </div>
 

@@ -36,7 +36,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
 
   // Contact Info based on search results for SHRIDEEPMALA FILMS PRIVATE LIMITED
   const contactInfo = [
-    { icon: MapPin, text: 'SHRIDEEPMALA FILMS PRIVATE LIMITED Inlaks Nagar, Yari Road, Versova, Andheri West,Mumbai, Maharashtra - 400061' },
+    { icon: MapPin, text: 'SHRIDEEPMALA FILMS PRIVATE LIMITED  Inlaks Nagar, Yari Road, Versova, Andheri West,Mumbai, Maharashtra - 400061' },
     { icon: Mail, text: 'shrideepmalafilms@gmail.com', isLink: true, href: 'shrideepmalafilms@gmail.com' },
     { icon: Phone, text: '+91-9565813272', isLink: true, href: 'tel:+91-9565813272' }, // Placeholder phone
   ];
@@ -47,10 +47,10 @@ export function Footer({ setCurrentPage }: FooterProps) {
   return (
     <footer className="bg-black text-white pt-10 pb-8 "> {/* ⬅️ CHANGE: Increased pt-6 to pt-10 and pb-4 to pb-8 */}
     {/* Ensure px-6 sm:px-8 lg:px-10 is providing enough side margin */}
-    <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10"> 
+    <div className="max-w-7xl mx-auto px-8 sm:px-8 lg:px-10"> 
         
         {/* Main 3-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12"> {/* ⬅️ CHANGE: Increased mt-8 to mt-12. Adjusted gap to a moderate gap-4 */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-12 mb-12"> {/* ⬅️ CHANGE: Increased mt-8 to mt-12. Adjusted gap to a moderate gap-4 */}
 
             
             {/* Column 1: Logo and About Company */}
@@ -72,7 +72,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
 
   {/* Company Description: Reduced mb-8 to mb-4 */}
   <p className="text-xs text-gray-300 max-w-xs mx-auto mb-4">
-    Shri Deepmala Films is committed to producing high-quality and compelling
+    Shri Deepmala Films is committed to producing  high-quality and compelling
     cinema, web series, and visual content, bringing captivating stories to life on screen.
   </p>
 
@@ -121,7 +121,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
                 <ul className="space-y-2 text-xs"> {/* Increased space-y-1 to space-y-2 */}
                     {contactInfo.map((item, index) => (
                         <li key={index} className="flex items-start text-gray-300">
-                            <item.icon size={16} className="mr-2 mt-0.5 flex-shrink-0" /> 
+                           
                             {item.isLink ? (
                                 <a href={item.href} className="hover:text-red-600 transition-colors">
                                     {item.text}
@@ -139,8 +139,8 @@ export function Footer({ setCurrentPage }: FooterProps) {
         {/* --- */}
         
         {/* Copyright Section */}
-        <div className="mt-10 pt-6 border-t border-gray-700 text-center"> {/* ⬅️ CHANGE: Increased mt-6 to mt-10 and pt-4 to pt-6 */}
-            <p className="text-xs text-gray-500">
+        <div className="mt-10 pt-6 border-t border-gray-700   text-center"> {/* ⬅️ CHANGE: Increased mt-6 to mt-10 and pt-4 to pt-6 */}
+            <p className="text-xs text-gray-900 bg-white">
                 &copy; {new Date().getFullYear()} Copyright Shrideepmala Films Pvt. Ltd. All Rights Reserved.
             </p>
         </div>

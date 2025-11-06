@@ -25,7 +25,7 @@ export function Contact() {
           <br /><br />
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4  " >Get in Touch</h1>
           <i className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-            Have a project in mind? We'd love to hear from you. Let's create something extraordinary together.
+            We'd love to hear from you. Let's create something extraordinary.
           </i>
         </div>
 
@@ -43,7 +43,7 @@ export function Contact() {
                       <Input
                         id="name"
                         placeholder="Full Name "
-                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-lg"
+                        className="bg-gray-50 border-gray-300 focus:border-red-600  focus:ring-red-600  text-gray-900 rounded-lg"
                       />
                     </div>
                     <div>
@@ -51,7 +51,7 @@ export function Contact() {
                       <Input
                         id="email"
                         type="email"
-                        placeholder="Email Address"
+                        placeholder="Email"
                         className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-lg"
                       />
                     </div>
@@ -133,7 +133,7 @@ export function Contact() {
         <h3 className="font-semibold text-gray-900 mb-2">Mumbai Office</h3>
         <p className="text-sm text-gray-600 leading-relaxed">
           SHRIDEEPMALA FILMS PRIVATE LIMITED<br />
-          Inlaks Nagar, Yari Road,<br />
+          Inlaks Nagar, Yari Road,
           Versova, Andheri West,<br />
           Mumbai, Maharashtra - 400061
         </p>
@@ -149,9 +149,9 @@ export function Contact() {
         <h3 className="font-semibold text-gray-900 mb-2">Regional Office</h3>
         <p className="text-sm text-gray-600 leading-relaxed">
           SHRIDEEPMALA FILMS PRIVATE LIMITED<br />
-          Plot No. -9, Durgapuri Colony<br />
+          Plot No. -9, Durgapuri Colony
           Nr. Springdale, Malhaur B.O,<br />
-          Durga Puri, Lucknow(UP) - 226028
+          Durga Puri, Lucknow (UP) - 226028
         </p>
       </CardContent>
     </Card>

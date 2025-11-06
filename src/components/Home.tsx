@@ -25,6 +25,7 @@ import fourth from '../assets/poster/FOURTH.jpeg';
 import DRIP from '../assets/youtube/drip.png';
 import KAREGA from '../assets/youtube/karega.png';
 import UNKNOWN from '../assets/youtube/unkonwn.png';
+import OurStory from '../assets/story/ourstory.jpg';
 
 export function Home() {
   const featuredMovies = [
@@ -189,7 +190,7 @@ export function Home() {
             </div>
             <div className="relative h-[500px]">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1512939755946-501bd2c2540d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3ZpZSUyMGRpcmVjdG9yJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzYxNjI3MTcwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src= {OurStory}
                 alt="Production"
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />
