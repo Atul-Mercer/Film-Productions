@@ -34,26 +34,24 @@ export function Contact() {
           <div className="w-full max-w-3xl">
             <Card className="bg-white border-gray-200 shadow-xl rounded-2xl overflow-hidden">
               <CardContent className="p-8 md:p-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-                  Send Us a Message
-                </h2>
+               
 
                 <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <Label htmlFor="name" className="text-gray-800 font-medium mb-2 block">Full Name *</Label>
+                     
                       <Input
                         id="name"
-                        placeholder="John Doe"
+                        placeholder="Full Name "
                         className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-lg"
                       />
                     </div>
                     <div>
-                      <Label htmlFor="email" className="text-gray-800 font-medium mb-2 block">Email Address *</Label>
+                    
                       <Input
                         id="email"
                         type="email"
-                        placeholder="john@example.com"
+                        placeholder="Email Address"
                         className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-lg"
                       />
                     </div>
@@ -61,24 +59,24 @@ export function Contact() {
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <Label htmlFor="phone" className="text-gray-800 font-medium mb-2 block">Phone Number</Label>
+                      
                       <Input
                         id="phone"
-                        placeholder="+91 98765 43210"
+                        placeholder="Phone Number"
                         className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-lg"
                       />
                     </div>
                     <div>
-                      <Label htmlFor="subject" className="text-gray-800 font-medium mb-2 block">Subject *</Label>
+                   
                       <Input
                         id="subject"
-                        placeholder="Project Inquiry"
+                        placeholder="Subject"
                         className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-lg"
                       />
                     </div>
                   </div>
 
-                  <div>
+                  {/* <div>
                     <Label htmlFor="service" className="text-gray-800 font-medium mb-2 block">Service Required</Label>
                     <select
                       id="service"
@@ -92,24 +90,19 @@ export function Contact() {
                       <option value="theatre">Theatre Production</option>
                       <option value="other">Other</option>
                     </select>
-                  </div>
+                  </div> */}
 
                   <div>
-                    <Label htmlFor="message" className="text-gray-800 font-medium mb-2 block">Message *</Label>
+                    {/* <Label htmlFor="message" className="text-gray-800 font-medium mb-2 block">Message *</Label> */}
                     <Textarea
                       id="message"
-                      placeholder="Tell us about your project..."
+                      placeholder="Message"
                       rows={6}
                       className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 resize-none text-gray-900 rounded-lg"
                     />
                   </div>
 
-                  <div className="flex items-start gap-3">
-                    <input type="checkbox" id="consent" className="mt-1 rounded border-gray-300" />
-                    <label htmlFor="consent" className="text-sm text-gray-600 leading-relaxed">
-                      I agree to the privacy policy and consent to Shri Deepmala Films contacting me regarding my inquiry.
-                    </label>
-                  </div>
+                  
 
                   <div className="flex justify-center">
                   <button
