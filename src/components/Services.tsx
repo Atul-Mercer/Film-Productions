@@ -187,11 +187,13 @@ export function Services() {
             >
               <CardContent className="p-6"> {/* Reduced padding from p-8 to p-6 */}
                 
-                {/* ICON: Reduced size and bottom margin */}
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-purple-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <service.icon size={24} className="text-white" /> {/* Reduced icon size from 32 to 24 */}
-                </div>
-                
+      {/* ICON: Set solid golden background and removed conflicting utility */}
+<div 
+  className="w-10 h-10 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+  style={{ backgroundColor: '#D1A666' }} // ✅ Use inline style for maximum precedence
+>
+  <service.icon size={24} className="text-white" />
+</div>    
                 {/* TITLE: Reduced font size and bottom margin */}
                 <h3 className="text-xl mb-3 text-gray-900">{service.title}</h3> {/* Reduced text-2xl to text-xl and mb-4 to mb-3 */}
                 

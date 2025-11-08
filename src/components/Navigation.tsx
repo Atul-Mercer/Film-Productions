@@ -66,7 +66,8 @@ export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
   
  return (
   // Header background remains solid black regardless of scroll
-  <nav className={`sticky top-0 z-50 bg-black border-b border-gray-700 transition-colors duration-300`}> 
+  // <nav className={`sticky top-0 z-50 bg-black border-b border-gray-700 transition-colors duration-300`}> 
+  <nav className="sticky  bg-black border-gray-200">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center h-16">
         
@@ -80,12 +81,12 @@ export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
         alt="Shri Deepmala Films Logo"
         className="h-12 w-auto object-contain mt-2"
       />
-      <span
-        className="text-lg font-semibold tracking-wide font-serif"
-        style={{ color: brandColor }}
-      >
-        SHRI DEEPMALA FILMS
-      </span>
+     <span
+    className="text-lg font-semibold tracking-wide font-serif"
+    style={{ color: brandColor, fontFamily: 'Federo, sans-serif' }} // ✅ Added inline font-family
+>
+    SHRI DEEPMALA FILMS
+</span>
     </div>
 
 
@@ -123,7 +124,7 @@ export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
             <button
               key={item.id}
               onClick={() => handleNavClick(item.id)}
-              className={`block w-full text-left transition-colors ${
+              className={`block w-full text-left transition-colors text-white ${
                 currentPage === item.id
                   ? linkActiveClass
                   : 'text-gray-300 hover:text-white' // Mobile menu links remain simple light gray/white

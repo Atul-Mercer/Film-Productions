@@ -365,9 +365,12 @@ forces that confine them…`,
                         )}
                     </div>
             
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-red-600 to-purple-600 flex items-center justify-center relative z-10">
-                        <span className="text-sm text-white">{year}</span>
-                    </div>
+                    <div 
+  className="w-12 h-12 rounded-full flex items-center justify-center relative z-10"
+  style={{ backgroundColor: '#D1A666' }} // ✅ Applied solid golden background
+>
+    <span className="text-sm text-white">{year}</span>
+</div>
                     
                     <div className="w-1/2 pl-8">
                         {/* 2027 (Index 1) - Global Showcase */}

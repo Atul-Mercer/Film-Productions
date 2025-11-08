@@ -56,31 +56,40 @@ export function Footer({ setCurrentPage }: FooterProps) {
             {/* Column 1: Logo and About Company */}
    {/* Column 1: Logo and About Company */}
 {/* Column 1: Logo and About Company */}
-<div className="md:col-span-1 "> 
+<div 
+    className="md:col-span-1"
+    style={{ marginTop: '-42px' }} // ✅ ADDED: Inline negative margin top
+> 
 
-    {/* Logo and Company Name: Removed justify-center for left alignment */}
-    <div className="flex items-center space-x-3 mb-2"> 
+    {/* Logo and Company Name (No change here) */}
+    <div 
+        className="flex items-center space-x-3 mb-2" 
+        style={{ marginBottom: '-10px' }}
+    > 
         <img
             src={logos}
             alt="Shri Deepmala Films Logo"
             className="h-12 w-auto object-contain" 
         />
         <span
-            className="text-base font-semibold tracking-wide text-white"
+            className="text-base font-semibold tracking-wide text-white "
             style={{ color: brandColor }}
         >
             SHRI DEEPMALA FILMS
         </span>
     </div>
 
-    {/* Description: Removed width limits (max-w-xs) to ensure it aligns fully to the left edge of the column */}
-    <p className="text-xs text-gray-300 mb-4"> 
+    {/* Description: Added ml-[19px] for margin-left */}
+    <p 
+        className="text-xs text-gray-300 mb-4 "
+        style={{ marginLeft: '30px' }}
+    > 
         Shri Deepmala Films is committed to producing high-quality <br /> compelling 
         cinema, web series, and visual content, bringing <br /> captivating stories to life on screen.
     </p>
 
-    {/* Social Media Icons: Aligned to the start (left) */}
-    <ul className="flex justify-start gap-4"> {/* Reduced gap */}
+    {/* Social Media Icons: Added ml-[19px] for margin-left */}
+    <ul className="flex justify-start gap-4 ml-[19px]"  style={{ marginLeft: '30px' }}> 
         {socialLinks.map((social) => (
             <li key={social.name}>
                 <a
@@ -142,11 +151,11 @@ export function Footer({ setCurrentPage }: FooterProps) {
         {/* --- */}
         
         {/* Copyright Section */}
-        <div className="mt-10 pt-6 border-t border-gray-700   text-center"> {/* ⬅️ CHANGE: Increased mt-6 to mt-10 and pt-4 to pt-6 */}
-            <p className="text-xs text-gray-900 bg-white">
-                &copy; {new Date().getFullYear()} Copyright Shrideepmala Films Pvt. Ltd. All Rights Reserved.
-            </p>
-        </div>
+        <div className="mt-10 pt-6 border-t border-gray-700 text-center">
+    <p className="text-xs text-white " style={{ backgroundColor: '#2c333a' }} >
+        &copy; {new Date().getFullYear()} Copyright Shrideepmala Films Pvt. Ltd. All Rights Reserved.
+    </p>
+</div>
     </div>
 </footer>
   );

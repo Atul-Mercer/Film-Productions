@@ -156,38 +156,43 @@ export function Home() {
 
         {/* ---- CUSTOM ARROW BUTTONS (clickable) ---- */}
         <button
-          className="swiper-button-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/40 transition-all pointer-events-auto"
-          aria-label="Previous slide"
-        >
-          <ChevronLeft size={28} />
-        </button>
+    className="swiper-button-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/40 transition-all pointer-events-auto"
+    aria-label="Previous slide"
+    style={{ backgroundColor: '#2c333a', color: 'white' }} // ✅ Inline CSS for Black BG, White Icon
+>
+    <ChevronLeft size={28} />
+</button>
 
-        <button
-          className="swiper-button-next absolute right-4 top-1/2 -translate-y-1/2 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/40 transition-all pointer-events-auto"
-          aria-label="Next slide"
-        >
-          <ChevronRight size={28} />
-        </button>
+<button
+    className="swiper-button-next absolute right-4 top-1/2 -translate-y-1/2 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/40 transition-all pointer-events-auto"
+    aria-label="Next slide"
+    style={{ backgroundColor: '#2c333a', color: 'white' }} // ✅ Inline CSS for Black BG, White Icon
+>
+    <ChevronRight size={28} />
+</button>
+       
       </section>
 
       {/* ---------- ABOUT PRODUCTION ---------- */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl mb-6 text-gray-900">Crafting Stories That Matter</h2>
-              <div className="space-y-4 text-gray-600 text-sm">
-                <p>
-                  Welcome to Shri Deepmala Films - a creative sanctuary where stories are born from emotion and sculpted into moving experiences. We are a visionary film production house devoted to crafting cinema that transcends borders, languages, and cultures. At the heart of our storytelling lies the timeless essence of Navarasa - the nine emotions that define the human experience: love, laughter, sorrow, anger, courage, fear, disgust, wonder, and peace.
-                </p>
-                <p>
-                  Every project we create seeks to explore these emotional landscapes with honesty and depth, blending the spirit of Indian tradition with a modern global vision. At Shri Deepmala Films, cinema is not merely entertainment - it is a mirror to the soul, a dialogue between art and audience, and a timeless expression of life itself.
-                </p>
-                <p>
-                  Driven by passion and purpose, Shri Deepmala Films is committed to redefining storytelling in contemporary Indian cinema. We believe that true art is born when emotion meets truth - and through that belief, we aspire to create works that inspire, challenge, and stay alive in memory long after the screen fades to black.
-                </p>
-              </div>
-            </div>
+           <div style={{ fontFamily: 'Roboto Condensed, sans-serif' }}> {/* ✅ Changed font family */}
+           <h2 className="text-4xl mb-6 text-gray-900" >
+    Crafting Stories That Matter
+</h2>
+             <div className="space-y-4 text-gray-600 text-sm" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
+        <p>
+            Welcome to Shri Deepmala Films - a creative sanctuary where stories are born from emotion and sculpted into moving experiences. We are a visionary film production house devoted to crafting cinema that transcends borders, languages, and cultures. At the heart of our storytelling lies the timeless essence of Navarasa - the nine emotions that define the human experience: love, laughter, sorrow, anger, courage, fear, disgust, wonder, and peace.
+        </p>
+        <p>
+            Every project we create seeks to explore these emotional landscapes with honesty and depth, blending the spirit of Indian tradition with a modern global vision. At Shri Deepmala Films, cinema is not merely entertainment - it is a mirror to the soul, a dialogue between art and audience, and a timeless expression of life itself.
+        </p>
+        <p>
+            Driven by passion and purpose, Shri Deepmala Films is committed to redefining storytelling in contemporary Indian cinema. We believe that true art is born when emotion meets truth - and through that belief, we aspire to create works that inspire, challenge, and stay alive in memory long after the screen fades to black.
+        </p>
+    </div>
+</div>
             <div className="relative h-[500px]">
               <ImageWithFallback
                 src= {OurStory}
