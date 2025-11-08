@@ -23,8 +23,8 @@ export function Contact() {
         {/* Header */}
         <div className="text-center mb-16">
           <br /><br />
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4  " >Get in Touch</h1>
-          <i className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4  " style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Get in Touch</h1>
+          <i className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
             We'd love to hear from you. Let's create something extraordinary.
           </i>
         </div>
@@ -179,9 +179,12 @@ export function Contact() {
     </Card>
 
     {/* Social Media - GOLD BACKGROUND */}
-    <Card className="bg-[#D1A666] border border-amber-700/30 shadow-xl hover:shadow-2xl transition-all duration-300">
+    <Card className="bg-white border-gray-200 shadow-lg hover:shadow-xl transition-shadow lg:col-span-1">
       <CardContent className="p-6 text-center">
-        <h3 className="font-bold text-gray-900 text-lg mb-4">Follow Us</h3>
+        <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-red-600/10 flex items-center justify-center">
+          {/* <Phone className="text-red-600" size={28} /> */}
+        </div>
+        <h3 className="font-semibold text-gray-900 mb-2">Follow Us</h3>
         <div className="flex justify-center gap-4">
   <a href="https://www.facebook.com/dimple25dec" target="_blank" rel="noopener noreferrer">
     <button className="w-12 h-10 rounded-full bg-[#D1A666] shadow-lg hover:bg-red-600 hover:text-white hover:shadow-xl transition-all duration-300 group flex items-center justify-center">
@@ -208,7 +211,7 @@ export function Contact() {
         <div className="mt-20 grid md:grid-cols-3 gap-8 max-w-6xl mx-auto ">
           <Card className="text-center bg-white shadow-lg hover:shadow-xl transition-shadow mb-12">
             <CardContent className="p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Production Inquiries</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Production Inquiries</h3>
               <p className="text-gray-600 mb-4 text-sm">For film and series production opportunities</p>
               <a href="mailto:shrideepmalafilms@gmail.com" className="text-red-600 hover:text-red-700 font-medium">
                 shrideepmalafilms@gmail.com
@@ -218,7 +221,7 @@ export function Contact() {
 
           <Card className="text-center bg-white shadow-lg hover:shadow-xl transition-shadow mb-12">
             <CardContent className="p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Casting & Talent</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Casting & Talent</h3>
               <p className="text-gray-600 mb-4 text-sm">Submit your profile or casting inquiries</p>
               <a href="mailto:shrideepmalafilms@gmail.com" className="text-red-600 hover:text-red-700 font-medium">
                 shrideepmalafilms@gmail.com
@@ -228,7 +231,7 @@ export function Contact() {
 
           <Card className="text-center bg-white shadow-lg hover:shadow-xl transition-shadow mb-12">
             <CardContent className="p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Media & Press</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Media & Press</h3>
               <p className="text-gray-600 mb-4 text-sm">Press releases and media inquiries</p>
               <a href="mailto:shrideepmalafilms@gmail.com" className="text-red-600 hover:text-red-700 font-medium">
                 shrideepmalafilms@gmail.com

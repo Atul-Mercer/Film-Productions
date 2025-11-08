@@ -69,8 +69,8 @@ export function UpcomingProjects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-4xl mb-6 text-gray-900">Upcoming Projects</h1>
-          <i className="text-xl text-gray-500 max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-4xl mb-6 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Upcoming Projects</h1>
+          <i className="text-xl text-gray-500 max-w-3xl mx-auto" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
             Get a sneak peek at our exciting lineup of films, series, and special projects
           </i>
         </div>
@@ -120,7 +120,7 @@ export function UpcomingProjects() {
                     </Badge>
                   </div>
 
-                  <h2 className="text-2xl mb-4 text-gray-900">{project.title}</h2>
+                  <h2 className="text-2xl mb-4 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>{project.title}</h2>
                   
                   <div className="flex flex-wrap gap-4 text-sm text-gray-500 mb-6">
                  

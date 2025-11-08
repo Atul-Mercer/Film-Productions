@@ -74,18 +74,18 @@ happen.`    ,
       {/* Company Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
       <div className="text-center mb-16 "> {/* ⬅️ ADDED: -mt-[60px] */}
-    <h1 className="text-2xl md:text-4xl mb-6 text-gray-900">The Company</h1>
-    <i className="text-xl text-gray-500 max-w-3xl mx-auto ">
+    <h1 className="text-2xl md:text-4xl mb-6 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>The Company</h1>
+    <i className="text-xl text-gray-500 max-w-3xl mx-auto " style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
         Welcome to Shrideepmala Films Pvt. Ltd. Founded by Ms. Deep Mala Srivastava and Mr. Anil Dhakad
     </i>
 </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-20" >
           <div className="relative h-[00px]">
             <ImageWithFallback
               src={crop}
               alt="Production Set"
-              className="w-full h-[px] object-cover rounded-lg shadow-lg"
+              className="w-full  rounded-lg shadow-lg" style={{height: '410px'}}
             />
           </div>
           <div>
@@ -120,7 +120,7 @@ inspire, and resonate with audiences worldwide.
 
         {/* Company Values */}
         <div className="mb-12 ">
-          <h2 className="text-4xl mb-12 text-center text-gray-900">Our Core Values</h2>
+          <h2 className="text-4xl mb-12 text-center text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Our Core Values</h2>
           <div className="grid md:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <Card key={index} className="bg-white border-gray-200 hover:border-red-600/50 hover:shadow-lg transition-all">
@@ -128,7 +128,7 @@ inspire, and resonate with audiences worldwide.
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-600/20 mb-4">
                     <value.icon size={32} className="text-red-600" />
                   </div>
-                  <h3 className="text-xl mb-3 text-gray-900">{value.title}</h3>
+                  <h3 className="text-xl mb-3 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>{value.title}</h3>
                   <p className="text-gray-500 text-sm">{value.description}</p>
                 </CardContent>
               </Card>
@@ -141,8 +141,8 @@ inspire, and resonate with audiences worldwide.
       <section className="bg-gray-50 py-20">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="text-center mb-16">
-      <h2 className="text-4xl mb-4 text-gray-900">Our Directors</h2>
-      <p className="text-gray-500">Visionaries behind our storytelling</p>
+      <h2 className="text-4xl mb-4 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Our Directors</h2>
+      <p className="text-gray-500" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Visionaries behind our storytelling</p>
     </div>
 
     {/* Stack cards vertically — one per row */}
@@ -154,19 +154,19 @@ inspire, and resonate with audiences worldwide.
         >
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
             {/* Image: Full width on mobile, 2/5 on desktop */}
-            <div className="md:col-span-2 h-80 md:h-auto">
+            <div className="md:col-span-2 h-80 md:h-auto" style={{ height: '553px' }}>
               <ImageWithFallback
                 src={director.image}
                 alt={director.name}
-                className="w-full h-full object-cover"
+                className="w-full " 
               />
             </div>
 
             {/* Content: Full width on mobile, 3/5 on desktop */}
             <CardContent className="md:col-span-3 p-8 flex flex-col justify-center">
              
-              <h3 className="text-3xl mb-2 text-gray-900">{director.name}</h3>
-              <p className="text-red-600 mb-6">{director.role}</p>
+              <h3 className="text-3xl mb-2 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>{director.name}</h3>
+              <p className="text-red-600 mb-6" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>{director.role}</p>
               <p className="text-gray-600 leading-relaxed text-sm">{director.bio}</p>
             </CardContent>
           </div>

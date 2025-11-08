@@ -108,7 +108,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
 
     {/* Column 3: Quick Links (Pages) */}
 <div className="md:col-span-1 ">
-    <h3 className="text-lg font-semibold mb-4 text-white">Quick Links 🔗</h3> {/* Increased mb-3 to mb-4 */}
+    <h3 className="text-lg font-semibold mb-4 text-white">Quick Links </h3> {/* Increased mb-3 to mb-4 */}
     
     {/* List structure remains the same */}
     <ul className="grid md:grid-cols-2 gap-x-4 gap-y-1"> 
@@ -129,7 +129,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
             
             {/* Column 2: Contact Information - TIGHTENED SPACING */}
             <div className="md:col-span-1">
-                <h3 className="text-lg font-semibold mb-4 text-white">Contact Us 📞</h3> {/* Increased mb-3 to mb-4 */}
+                <h3 className="text-lg font-semibold mb-4 text-white">Contact Us </h3> {/* Increased mb-3 to mb-4 */}
                 <ul className="space-y-2 text-xs"> {/* Increased space-y-1 to space-y-2 */}
                     {contactInfo.map((item, index) => (
                         <li key={index} className="flex items-start text-gray-300">
@@ -152,7 +152,10 @@ export function Footer({ setCurrentPage }: FooterProps) {
         
         {/* Copyright Section */}
         <div className="mt-10 pt-6 border-t border-gray-700 text-center">
-    <p className="text-xs text-white " style={{ backgroundColor: '#2c333a' }} >
+    <p 
+        className="text-xs text-white py-4" // ✅ ADDED: py-2 for height
+        style={{ backgroundColor: '#111' }}  
+    >
         &copy; {new Date().getFullYear()} Copyright Shrideepmala Films Pvt. Ltd. All Rights Reserved.
     </p>
 </div>

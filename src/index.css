@@ -125,7 +125,7 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
-    --text-7xl: 4.5rem;
+    --text-7xl: 2.5rem;
     --text-7xl--line-height: 1;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
@@ -134,7 +134,7 @@
     --blur-sm: 8px;
     --default-transition-duration: .15s;
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-    --default-font-family: Roboto Condensed ;
+    /* --default-font-family: Roboto Condensed ; */
     /* federo */
     --default-font-feature-settings: var(--font-sans--font-feature-settings);
     --default-font-variation-settings: var(--font-sans--font-variation-settings);
@@ -1422,8 +1422,10 @@
   }
 
   .text-gray-900 {
-    color: black;
+    color:black;
   }
+
+  /* blackcolor */
 
   .text-muted-foreground {
     color: var(--muted-foreground);

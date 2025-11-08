@@ -142,8 +142,8 @@ export function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header (No change needed here) */}
         <div className="text-center mb-16">
-          <h1 className="text-3xl md:text-4xl mb-6 text-gray-900">Our Services</h1>
-          <i className="text-xl text-gray-500 max-w-3xl mx-auto">
+          <h1 className="text-3xl md:text-4xl mb-6 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Our Services</h1>
+          <i className="text-xl text-gray-500 max-w-3xl mx-auto" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
             Comprehensive production services tailored to bring your creative vision to life
           </i>
         </div>
@@ -195,7 +195,7 @@ export function Services() {
   <service.icon size={24} className="text-white" />
 </div>    
                 {/* TITLE: Reduced font size and bottom margin */}
-                <h3 className="text-xl mb-3 text-gray-900">{service.title}</h3> {/* Reduced text-2xl to text-xl and mb-4 to mb-3 */}
+                <h3 className="text-xl mb-3 text-gray-900"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>{service.title}</h3> {/* Reduced text-2xl to text-xl and mb-4 to mb-3 */}
                 
                 {/* DESCRIPTION: Reduced bottom margin and line height */}
                 <p className="text-gray-600 mb-4 text-sm leading-normal">
@@ -218,7 +218,7 @@ export function Services() {
 
         {/* Process Section (No change needed here) */}
         <div className="bg-gray-50 border border-gray-200 rounded-lg p-8 md:p-12">
-          <h2 className="text-4xl mb-12 text-center text-gray-900">Our Production Process</h2>
+          <h2 className="text-4xl mb-12 text-center text-gray-900"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Our Production Process</h2>
           <div className="grid md:grid-cols-4 gap-8">
             {[
               {
@@ -246,7 +246,7 @@ export function Services() {
                 <div className="text-5xl bg-gradient-to-r from-red-600 to-purple-600 bg-clip-text text-transparent mb-4">
                   {phase.step}
                 </div>
-                <h3 className="text-xl mb-3 text-gray-900">{phase.title}</h3>
+                <h3 className="text-xl mb-3 text-gray-900"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>{phase.title}</h3>
                 <p className="text-gray-500 text-sm">{phase.description}</p>
               </div>
             ))}

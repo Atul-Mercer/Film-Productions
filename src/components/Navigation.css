@@ -1,0 +1,20 @@
+/* Navigation.css */
+
+/* Default transparent navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: transparent;
+    /* transition: background-color 0.4s ease, box-shadow 0.4s ease; */
+    border-bottom: 1px solid transparent;
+    backdrop-filter: blur(8px);
+}
+
+/* When scrolled, turns solid black */
+.navbar.scrolled {
+    background-color: black;
+    color:white;
+    border-bottom: 1px solid #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}

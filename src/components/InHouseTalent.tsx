@@ -29,8 +29,8 @@ export function InHouseTalent() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl font-bold text-black mb-4 bg-">In-House Talents</h1>
-          <i className="text-gray-400 text-lg">
+          <h1 className="text-3xl font-bold text-black mb-4 bg-"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>In-House Talents</h1>
+          <i className="text-gray-400 text-lg"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
             Meet our talented artists who bring creativity to life.
           </i>
         </div>
@@ -54,7 +54,7 @@ export function InHouseTalent() {
               </div>
 
               {/* ---------- NAME (below the image, centered) ---------- */}
-              <h3 className="mt-4 text-xl font-semibold text-black group-hover:text-red-500 transition-colors">
+              <h3 className="mt-4 text-xl font-semibold text-black group-hover:text-red-500 transition-colors"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
                 {person.name}
               </h3>
             </div>

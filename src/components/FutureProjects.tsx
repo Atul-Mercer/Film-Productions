@@ -226,8 +226,8 @@ forces that confine them…`,
           {/* <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-red-600 to-purple-600 mb-6">
             <Lightbulb size={40} className="text-white" />
           </div> */}
-          <h1 className="text-3xl md:text-4xl mb-6 text-gray-900">Future Projects</h1>
-          <i className="text-md text-gray-500 max-w-3xl mx-auto">
+          <h1 className="text-3xl md:text-4xl mb-6 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Future Projects</h1>
+          <i className="text-md text-gray-500 max-w-3xl mx-auto" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
           Interested in collaborating on these ambitious projects? We're open to partnerships with Financiers, technicians, and creative visionaries. And also writers, directors can reach to us with their projects.
           </i>
         </div>
@@ -271,7 +271,7 @@ forces that confine them…`,
     <div className="md:col-span-10 p-8 md:p-10">
       <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
         <div>
-          <h2 className="text-2xl mb-2">{project.title}</h2>
+          <h2 className="text-2xl mb-2" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>{project.title}</h2>
           <p className="text-red-600">{project.type}</p>
           <p className="text-red-600">{project.director}</p>
           <p className="text-red-600">{project.Writer}</p>
@@ -325,7 +325,7 @@ forces that confine them…`,
 
         {/* Timeline */}
         <div className="mt-20">
-    <h2 className="text-4xl mb-12 text-center text-gray-900">Development Timeline</h2>
+    <h2 className="text-4xl mb-12 text-center text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Development Timeline</h2>
     <div className="relative">
         <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-600 " />
         <div className="space-y-8">
@@ -334,7 +334,7 @@ forces that confine them…`,
                     <div className="w-1/2 text-right pr-8">
                         {/* ✅ 2026 (Index 0) - Breakthrough Year */}
                         {index === 0 && (
-                            <p className="black">
+                            <p className="black" >
                                Foundation & Vision Setting
                                 <br />
                                 <p className="text-sm">
@@ -356,9 +356,9 @@ forces that confine them…`,
                         
                         {/* 2030 (Index 4) - Legacy & Continuity */}
                         {index === 4 && (
-                            <span className="text-black">
+                            <span className="text-black" >
                                 Legacy & Continuity <br />
-                                <p>
+                                <p className="text-sm">
                                     Multiple projects in active development and release pipeline. Aim to be recognized as a cross-cultural cinematic voice from Bharat. Continued presence in international film festivals, solidifying global recognition.
                                 </p>
                             </span>

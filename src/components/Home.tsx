@@ -36,7 +36,7 @@ export function Home() {
       genre: 'Youtube Video',
       rating: 8.5,
       description:
-        'Lost in the rain, chasing shadows through the pain, Every drop whispers the truth I can’t contain.',
+        'Lost in rain, chasing shadows through pain, Every drop whispers the truth I can’t contain.',
       image: DRIP,
       link: 'https://www.youtube.com/watch?v=iT6eefjJD1U',
     },
@@ -47,7 +47,7 @@ export function Home() {
       genre: 'Youtube Video',
       rating: 8.2,
       description:
-        'Tighten your belt, open your eyes  let the river of change flow, Let’s walk together to rewrite history and bring back the golden glory.',
+        ' Let’s walk together to rewrite history and bring back the golden glory.',
       image: UNKNOWN,
       link: 'https://www.youtube.com/watch?v=UIkfe753yzY',
     },
@@ -119,32 +119,32 @@ export function Home() {
         >
           {featuredItems.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="absolute inset-0">
+              <div className="absolute inset-0" >
                 <ImageWithFallback
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-1000 ease-in-out scale-100 hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-1000 ease-in-out scale-100 hover:scale-105" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
               </div>
 
               <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-end pb-20">
                 <div className="max-w-3xl animate-fade-in">
-                  <div className="flex items-center gap-3 mb-4">
+                  <div className="flex items-center gap-3 mb-4"style={{ marginLeft: '30px' }}>
                     <span className="px-3 py-1 bg-red-600 text-white text-xs tracking-wider rounded-full shadow-md">
                       {item.status}
                     </span>
                   </div>
 
-                  <h1 className="text-6xl md:text-7xl mb-6 text-white font-bold tracking-tight drop-shadow-lg">
+                  <h1 className="text-6xl md:text-7xl mb-6 text-white font-bold tracking-tight drop-shadow-lg" style={{ marginLeft: '30px' }}>
                     {item.title}
                   </h1>
 
-                  <p className="text-xl text-white/90 mb-8 max-w-2xl leading-relaxed">
+                  <p className="text-xl text-white/90 mb-8 max-w-2xl leading-relaxed"style={{ marginLeft: '30px' }}>
                     {item.description}
                   </p>
 
-                  <button className="px-8 py-4 bg-red-600 text-white hover:bg-red-700 transition-colors flex items-center gap-2 group rounded-lg shadow-lg hover:shadow-xl">
+                  <button className="px-8 py-4 bg-red-600 text-white hover:bg-red-700 transition-colors flex items-center gap-2 group rounded-lg shadow-lg hover:shadow-xl"style={{ marginLeft: '30px' }}>
                     <Play size={20} className="group-hover:scale-110 transition-transform" />
                     Watch Trailer
                   </button>
@@ -177,11 +177,11 @@ export function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-           <div style={{ fontFamily: 'Roboto Condensed, sans-serif' }}> {/* ✅ Changed font family */}
-           <h2 className="text-4xl mb-6 text-gray-900" >
+           <div > {/* ✅ Changed font family */}
+           <h2 className="text-4xl mb-6 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
     Crafting Stories That Matter
 </h2>
-             <div className="space-y-4 text-gray-600 text-sm" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
+             <div className="space-y-4 text-gray-600 text-sm" >
         <p>
             Welcome to Shri Deepmala Films - a creative sanctuary where stories are born from emotion and sculpted into moving experiences. We are a visionary film production house devoted to crafting cinema that transcends borders, languages, and cultures. At the heart of our storytelling lies the timeless essence of Navarasa - the nine emotions that define the human experience: love, laughter, sorrow, anger, courage, fear, disgust, wonder, and peace.
         </p>
@@ -193,11 +193,11 @@ export function Home() {
         </p>
     </div>
 </div>
-            <div className="relative h-[500px]">
+            <div className="relative h-[500px]" style = {{height: '430px', marginTop: '35px'}}>
               <ImageWithFallback
                 src= {OurStory}
                 alt="Production"
-                className="w-full h-full object-cover rounded-lg shadow-lg"
+                className="w-full h-full  rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -209,8 +209,8 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-end mb-12">
             <div>
-              <h2 className="text-4xl mb-3 text-gray-900 font-bold">Our Latest Productions</h2>
-              <p className="text-gray-500">Experience the magic of cinema</p>
+              <h2 className="text-4xl mb-3 text-gray-900 font-bold" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Our Latest Productions</h2>
+              <p className="text-gray-500" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Experience the magic of cinema</p>
             </div>
           </div>
 
@@ -236,7 +236,7 @@ export function Home() {
                       <Calendar size={14} />
                       {movie.genre}
                     </div>
-                    <h3 className="text-xl mb-3 text-gray-900 font-semibold">{movie.title}</h3>
+                    <h3 className="text-md mb-3 text-gray-900 font-semibold" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>{movie.title}</h3>
                     <p className="text-gray-600 mb-4 text-sm">{movie.description}</p>
                     <span className="text-red-600 hover:text-red-500 transition-colors flex items-center gap-2">
                       Watch Now
