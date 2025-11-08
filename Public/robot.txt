@@ -1,0 +1,25 @@
+# ----------------------------------------------
+# robots.txt for Shri Deepmala Films
+# ----------------------------------------------
+
+# Allow all search engines to crawl the website
+User-agent: *
+Allow: /
+
+# Prevent crawling of development or private files (optional)
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /assets/
+
+# Sitemap link for search engines
+Sitemap: https://www.shrideepmalafilms.com/sitemap.xml
+
+# Host information
+Host: https://www.shrideepmalafilms.com
+
+# ----------------------------------------------
+# Notes:
+# - Place this file in the public/ directory of your React project.
+# - After deploying to Vercel, it will be available at:
+#   https://www.shrideepmalafilms.com/robots.txt
+# ----------------------------------------------
