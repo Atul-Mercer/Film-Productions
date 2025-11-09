@@ -36,14 +36,14 @@ export function Contact() {
               <CardContent className="p-8 md:p-12">
                
 
-                <form ref={form} onSubmit={handleSubmit} className="space-y-6">
+                <form ref={form} onSubmit={handleSubmit} className="space-y-6" >
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                      
                       <Input
                         id="name"
                         placeholder="Full Name "
-                        className="bg-gray-50 border-gray-300 focus:border-red-600  focus:ring-red-600  text-gray-900 rounded-none" // ⬅️ Changed rounded-lg to rounded-none
+                        className="bg-gray-50 border-gray-300 focus:border-red-600  focus:ring-red-600  text-gray-900 rounded-none" style={{ fontSize: '14px' }}// ⬅️ Changed rounded-lg to rounded-none
                       />
                     </div>
                     <div>
@@ -52,7 +52,7 @@ export function Contact() {
                         id="email"
                         type="email"
                         placeholder="Email"
-                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none" // ⬅️ Changed rounded-lg to rounded-none
+                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none" style={{ fontSize: '14px' }}// ⬅️ Changed rounded-lg to rounded-none
                       />
                     </div>
                   </div>
@@ -63,7 +63,7 @@ export function Contact() {
                       <Input
                         id="phone"
                         placeholder="Phone Number"
-                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none" // ⬅️ Changed rounded-lg to rounded-none
+                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none" style={{ fontSize: '14px' }}// ⬅️ Changed rounded-lg to rounded-none
                       />
                     </div>
                     <div>
@@ -71,7 +71,7 @@ export function Contact() {
                       <Input
                         id="subject"
                         placeholder="Subject"
-                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none" // ⬅️ Changed rounded-lg to rounded-none
+                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none"  style={{ fontSize: '14px' }}// ⬅️ Changed rounded-lg to rounded-none
                       />
                     </div>
                   </div>
@@ -92,7 +92,7 @@ export function Contact() {
                       id="message"
                       placeholder="Message"
                       rows={6}
-                      className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 resize-none text-gray-900 rounded-none" // ⬅️ Changed rounded-lg to rounded-none
+                      className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 resize-none text-gray-900 rounded-none" style={{ fontSize: '14px' }}// ⬅️ Changed rounded-lg to rounded-none
                     />
                   </div>
 
@@ -101,7 +101,7 @@ export function Contact() {
                   <div className="flex justify-center">
                   <button
   type="submit"
-  className="w-50% max-w-sm mx-auto px-8 py-3 bg-red-600 text-white font-bold text-base rounded-none shadow-xl hover:bg-red-700 hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group" // ⬅️ Changed rounded-xl to rounded-none
+  className="w-50% max-w-sm mx-auto px-6 py-2 bg-red-600 text-white font-bold text-base rounded-none shadow-xl hover:bg-red-700 hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group" style={{ fontSize: '14px' }}// ⬅️ Changed rounded-xl to rounded-none
 >
   {/* <Send size={20} className="group-hover:translate-x-1 transition-transform" /> */}
   Send Message

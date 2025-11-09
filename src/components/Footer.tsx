@@ -51,7 +51,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
     <div className="max-w-7xl mx-auto px-8 sm:px-8 lg:px-10"> 
         
         {/* Main 3-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-12 mb-12"> {/* ⬅️ CHANGE: Increased mt-8 to mt-12. Adjusted gap to a moderate gap-4 */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-20 mb-12"> {/* ⬅️ CHANGE: Increased mt-8 to mt-12. Adjusted gap to a moderate gap-4 */}
 
             
             {/* Column 1: Logo and About Company */}
@@ -134,24 +134,26 @@ export function Footer({ setCurrentPage }: FooterProps) {
     <h3 className="text-lg font-semibold mb-4 text-white" >Contact Us </h3>
     <ul className="space-y-2 text-xs">
         {contactInfo.map((item, index) => (
-            <li key={index} className="flex items-start text-gray-300">
+            <li 
+                key={index} 
+                className={`flex items-start text-gray-300 ${!item.isLink ? 'mb-4' : ''}`} // ⬅️ Conditional mb-4 added here
+            >
                 
-                {/* Check if the item is NOT a link (i.e., it's the static address) 
-                    and apply the opacity style directly to the <span> or <a> tag. */}
-                {item.isLink ? (
+                {/* Check if the item is NOT a link (i.e., it's the static address) */}
+                {!item.isLink ? (
+                    // 0.8 OPACITY for static address (Added space below this item)
+                    <span className="mb-3" style={{ opacity: 0.8 }}>
+                        {item.text}
+                    </span>
+                ) : (
                     // FULL OPACITY for links (Email/Phone)
                     <a 
                         href={item.href} 
-                        className="hover:text-red-600 transition-colors" 
-                        style={{ opacity: 1.0 }} 
+                        className="hover:text-red-600 transition-colors " 
+                        style={{ opacity: 0.8 }} 
                     >
                         {item.text}
                     </a>
-                ) : (
-                    // 0.8 OPACITY for static address (where item.isLink is false)
-                    <span style={{ opacity: 0.8 , marginTop: '4px' }}>
-                        {item.text}
-                    </span>
                 )}
             </li>
         ))}
