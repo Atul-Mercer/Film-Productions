@@ -37,8 +37,9 @@ export function Footer({ setCurrentPage }: FooterProps) {
   // Contact Info based on search results for SHRIDEEPMALA FILMS PRIVATE LIMITED
   const contactInfo = [
     { icon: MapPin, text: 'SHRIDEEPMALA FILMS PRIVATE LIMITED  Inlaks Nagar, Yari Road, Versova, Andheri West, Mumbai, Maharashtra - 400061' },
-    { icon: Mail, text: 'shrideepmalafilms@gmail.com', isLink: true, href: 'shrideepmalafilms@gmail.com' },
     { icon: Phone, text: '+91-9565813272', isLink: true, href: 'tel:+91-9565813272' }, // Placeholder phone
+    { icon: Mail, text: 'shrideepmalafilms@gmail.com', isLink: true, href: 'shrideepmalafilms@gmail.com' },
+
   ];
 
   // Reusing the golden color from your header
@@ -84,8 +85,8 @@ export function Footer({ setCurrentPage }: FooterProps) {
         className="text-xs text-gray-300 mb-4 "
         style={{ marginLeft: '30px', opacity: 0.8 }}
     > 
-        Shri Deepmala Films is committed to producing high<br /> quality compelling 
-        cinema, web series, and visual <br /> content, bringing  captivating stories to life on screen.
+       Shri Deepmala Films is dedicated
+       to redefining <br />the art of cinema. We celebrate storytelling in <br />all its forms-through captivating theatre, immersive workshops, and visionary mentorship programs. <br /> Our mission is to discover and nurture extraordinary <br />talents, offering them a world-class stage to shine <br /> and share their art with global audiences.
     </p>
     <br />
 
@@ -131,7 +132,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
             {/* Column 2: Contact Information - TIGHTENED SPACING */}
             <div className="md:col-span-1">
     <h3 className="text-lg font-semibold mb-4 text-white" >Contact Us </h3>
-    <ul className="space-y-4 text-xs">
+    <ul className="space-y-2 text-xs">
         {contactInfo.map((item, index) => (
             <li key={index} className="flex items-start text-gray-300">
                 
@@ -146,10 +147,9 @@ export function Footer({ setCurrentPage }: FooterProps) {
                     >
                         {item.text}
                     </a>
-                    
                 ) : (
                     // 0.8 OPACITY for static address (where item.isLink is false)
-                    <span style={{ opacity: 0.8 }}>
+                    <span style={{ opacity: 0.8 , marginTop: '4px' }}>
                         {item.text}
                     </span>
                 )}

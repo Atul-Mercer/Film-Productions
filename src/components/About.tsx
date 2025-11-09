@@ -155,13 +155,13 @@ inspire, and resonate with audiences worldwide.
         >
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
             {/* Image Container */}
-            <div className="md:col-span-2 h-80 md:h-auto" style={{ height: '553px' }}>
+            <div className="md:col-span-2 h-80 md:h-auto" style={{ height: '600px' }}>
               <ImageWithFallback
                 src={director.image}
                 alt={director.name}
                 // ✅ FIX 1: Changed object-cover to object-contain to prevent cropping
                 // ✅ FIX 2: Added h-full to ensure the image uses the container's full height
-                className="w-full h-full object-contain" 
+                className="w-full h-full object-cover" 
               />
             </div>
 

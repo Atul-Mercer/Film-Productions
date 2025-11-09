@@ -103,7 +103,7 @@ export function Contact() {
   type="submit"
   className="w-50% max-w-sm mx-auto px-8 py-3 bg-red-600 text-white font-bold text-base rounded-none shadow-xl hover:bg-red-700 hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group" // ⬅️ Changed rounded-xl to rounded-none
 >
-  <Send size={20} className="group-hover:translate-x-1 transition-transform" />
+  {/* <Send size={20} className="group-hover:translate-x-1 transition-transform" /> */}
   Send Message
 </button>
                   </div>
