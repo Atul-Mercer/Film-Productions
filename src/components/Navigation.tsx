@@ -58,9 +58,9 @@ export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
                 className={`text-sm transition-colors ${
                   currentPage === item.id
                     ? 'text-red-600'
-                    : 'text-gray-300 hover:text-red-600'
+                    : 'text-gray-300 hover:text-red-600'  
                 }`}
-              >
+                style={{  opacity: 0.8 }}>
                 {item.label}
               </button>
             ))}

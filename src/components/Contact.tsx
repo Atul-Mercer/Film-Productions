@@ -23,16 +23,16 @@ export function Contact() {
         {/* Header */}
         <div className="text-center mb-16">
           <br /><br />
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4  " style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Get in Touch</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4  " style={{ fontFamily: 'Roboto Condensed, sans-serif' ,marginTop: '10px' }}>Get in Touch</h1>
           <i className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
             We'd love to hear from you. Let's create something extraordinary.
           </i>
         </div>
 
         {/* ========== CENTERED CONTACT FORM ========== */}
-        <div className="flex justify-center mb-20 ">
+        <div className="flex justify-center mb-20 "  style={{ marginTop: '-60px' }}>
           <div className="w-full max-w-3xl">
-            <Card className="bg-white border-gray-200 shadow-xl rounded-2xl overflow-hidden">
+            
               <CardContent className="p-8 md:p-12">
                
 
@@ -43,7 +43,7 @@ export function Contact() {
                       <Input
                         id="name"
                         placeholder="Full Name "
-                        className="bg-gray-50 border-gray-300 focus:border-red-600  focus:ring-red-600  text-gray-900 rounded-lg"
+                        className="bg-gray-50 border-gray-300 focus:border-red-600  focus:ring-red-600  text-gray-900 rounded-none" // ⬅️ Changed rounded-lg to rounded-none
                       />
                     </div>
                     <div>
@@ -52,7 +52,7 @@ export function Contact() {
                         id="email"
                         type="email"
                         placeholder="Email"
-                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-lg"
+                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none" // ⬅️ Changed rounded-lg to rounded-none
                       />
                     </div>
                   </div>
@@ -63,7 +63,7 @@ export function Contact() {
                       <Input
                         id="phone"
                         placeholder="Phone Number"
-                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-lg"
+                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none" // ⬅️ Changed rounded-lg to rounded-none
                       />
                     </div>
                     <div>
@@ -71,34 +71,28 @@ export function Contact() {
                       <Input
                         id="subject"
                         placeholder="Subject"
-                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-lg"
+                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none" // ⬅️ Changed rounded-lg to rounded-none
                       />
                     </div>
                   </div>
 
+                  {/* Service Select (if used, would need updating here) */}
                   {/* <div>
                     <Label htmlFor="service" className="text-gray-800 font-medium mb-2 block">Service Required</Label>
                     <select
                       id="service"
-                      className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:border-red-600 text-gray-900 transition-colors"
+                      className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-none focus:outline-none focus:border-red-600 text-gray-900 transition-colors" // ⬅️ Changed rounded-lg to rounded-none
                     >
                       <option value="">Select a service</option>
-                      <option value="film">Film Production</option>
-                      <option value="series">Web Series</option>
-                      <option value="commercial">Commercial/Advertisement</option>
-                      <option value="music">Music Video</option>
-                      <option value="theatre">Theatre Production</option>
-                      <option value="other">Other</option>
                     </select>
                   </div> */}
 
                   <div>
-                    {/* <Label htmlFor="message" className="text-gray-800 font-medium mb-2 block">Message *</Label> */}
                     <Textarea
                       id="message"
                       placeholder="Message"
                       rows={6}
-                      className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 resize-none text-gray-900 rounded-lg"
+                      className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 resize-none text-gray-900 rounded-none" // ⬅️ Changed rounded-lg to rounded-none
                     />
                   </div>
 
@@ -107,7 +101,7 @@ export function Contact() {
                   <div className="flex justify-center">
                   <button
   type="submit"
-  className="w-50% max-w-sm mx-auto px-8 py-3 bg-red-600 text-white font-bold text-base rounded-xl shadow-xl hover:bg-red-700 hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group"
+  className="w-50% max-w-sm mx-auto px-8 py-3 bg-red-600 text-white font-bold text-base rounded-none shadow-xl hover:bg-red-700 hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group" // ⬅️ Changed rounded-xl to rounded-none
 >
   <Send size={20} className="group-hover:translate-x-1 transition-transform" />
   Send Message
@@ -115,7 +109,7 @@ export function Contact() {
                   </div>
                 </form>
               </CardContent>
-            </Card>
+          
           </div>
         </div>
 

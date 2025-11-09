@@ -174,7 +174,7 @@ export function Home() {
       </section>
 
       {/* ---------- ABOUT PRODUCTION ---------- */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 " style = {{marginTop: '30px'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
            <div > {/* ✅ Changed font family */}

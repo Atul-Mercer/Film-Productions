@@ -7,6 +7,7 @@ import OurStory from '../assets/story/ourstory.jpg';
 import Biglogo from '../assets/Logo/DEEP.jpg'
 import white from '../assets/Logo/SHRI.png'
 import crop from '../assets/Logo/crop.png'
+import Anil from '../assets/directors/okk.jpeg'
 
 export function About() {
   const directors = [
@@ -41,7 +42,7 @@ happen.`    ,
       name: 'Anil Dhakad',
       role: 'Co-Founder & Director',
       bio: 'Hailing from the Shivpuri district of Madhya Pradesh, Anil Dhakad is a multifaceted professional-widely recognized as a celebrity yoga trainer and a driving force behind Shrideepmala Films Pvt. Ltd. As the company’s Co-Founder and Director, he stands as one of its strongest pillars, contributing strategic vision and creative leadership to every project. Originally trained as an actor, Anil moved to Mumbai to pursue his passion for the performing arts. While his journey led him to discover a deep connection with yoga-where he built a distinguished reputation-his love for cinema has remained constant. Today, he combines his artistic sensibilities, discipline, and industry insight to guide Shrideepmala Films toward new creative and professional heights. Anil Dhakad continues to bridge the worlds of wellness and entertainment, embodying the spirit of balance, focus, and creative excellence.',
-      image: AnilDhakad,
+      image: Anil,
       awards: '10+ International Awards',
     },
   ];
@@ -74,7 +75,7 @@ happen.`    ,
       {/* Company Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
       <div className="text-center mb-16 "> {/* ⬅️ ADDED: -mt-[60px] */}
-    <h1 className="text-2xl md:text-4xl mb-6 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>The Company</h1>
+    <h1 className="text-2xl md:text-4xl mb-8 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif', marginTop: '10px' }}>The Company</h1>
     <i className="text-xl text-gray-500 max-w-3xl mx-auto " style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
         Welcome to Shrideepmala Films Pvt. Ltd. Founded by Ms. Deep Mala Srivastava and Mr. Anil Dhakad.
     </i>
@@ -85,14 +86,14 @@ happen.`    ,
             <ImageWithFallback
               src={crop}
               alt="Production Set"
-              className="w-full object-cover rounded-lg shadow-lg" style={{height: '410px'}}
+              className="object-cover rounded-lg shadow-lg" style={{height: '450px' , marginLeft: '60px'}}
             />
           </div>
           <div>
        
             <div className="space-y-4 text-gray-600 text-sm">
               
-              <p>
+              <p >
               At Shrideepmala Films Pvt. Ltd., creativity meets precision and every frame
 becomes a work of art. As a forward-thinking film production company, we specialize
 in crafting exceptional visual narratives across diverse genres-including corporate
@@ -153,12 +154,14 @@ inspire, and resonate with audiences worldwide.
           className="bg-white border-gray-200 overflow-hidden shadow-lg max-w-5xl mx-auto"
         >
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-            {/* Image: Full width on mobile, 2/5 on desktop */}
+            {/* Image Container */}
             <div className="md:col-span-2 h-80 md:h-auto" style={{ height: '553px' }}>
               <ImageWithFallback
                 src={director.image}
                 alt={director.name}
-                className="w-full " 
+                // ✅ FIX 1: Changed object-cover to object-contain to prevent cropping
+                // ✅ FIX 2: Added h-full to ensure the image uses the container's full height
+                className="w-full h-full object-contain" 
               />
             </div>
 

@@ -142,7 +142,7 @@ export function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header (No change needed here) */}
         <div className="text-center mb-16">
-          <h1 className="text-3xl md:text-4xl mb-6 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Our Services</h1>
+          <h1 className="text-3xl md:text-4xl mb-6 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif', marginTop: '10px'  }}>Our Services</h1>
           <i className="text-xl text-gray-500 max-w-3xl mx-auto" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
             Comprehensive production services tailored to bring your creative vision to life.
           </i>

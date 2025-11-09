@@ -226,7 +226,7 @@ forces that confine them…`,
           {/* <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-red-600 to-purple-600 mb-6">
             <Lightbulb size={40} className="text-white" />
           </div> */}
-          <h1 className="text-3xl md:text-4xl mb-6 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Future Projects</h1>
+          <h1 className="text-3xl md:text-4xl mb-6 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif',marginTop: '10px'  }}>Future Projects</h1>
           <i className="text-md text-gray-500 max-w-3xl mx-auto" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
           Interested in collaborating on these ambitious projects? We're open to partnerships with Financiers, technicians, and creative visionaries. And also writers, directors can reach to us with their projects.
           </i>
@@ -256,14 +256,14 @@ forces that confine them…`,
               key={project.id} 
               className="bg-white border-gray-200 hover:border-red-600/50 hover:shadow-lg transition-all overflow-hidden group"
             >
-             <CardContent className="p-0">
+             <CardContent className="p-0" style={{ height: '348px' }}>
   <div className="grid md:grid-cols-12 gap-0">
     {/* Icon Section – NO GRADIENT, IMAGE COVERS FULL AREA */}
     <div className="md:col-span-2 flex items-center justify-center overflow-hidden">
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
       />
     </div>
 

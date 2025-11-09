@@ -82,14 +82,15 @@ export function Footer({ setCurrentPage }: FooterProps) {
     {/* Description: Added ml-[19px] for margin-left */}
     <p 
         className="text-xs text-gray-300 mb-4 "
-        style={{ marginLeft: '30px' }}
+        style={{ marginLeft: '30px', opacity: 0.8 }}
     > 
         Shri Deepmala Films is committed to producing high<br /> quality compelling 
         cinema, web series, and visual <br /> content, bringing  captivating stories to life on screen.
     </p>
+    <br />
 
     {/* Social Media Icons: Added ml-[19px] for margin-left */}
-    <ul className="flex justify-start gap-4 ml-[19px]"  style={{ marginLeft: '30px' }}> 
+    <ul className="flex justify-start gap-4 ml-[19px]"  style={{ marginLeft: '30px' ,opacity: 0.8}}> 
         {socialLinks.map((social) => (
             <li key={social.name}>
                 <a
@@ -97,7 +98,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`flex items-center justify-start text-gray-300 ${social.color} transition-transform hover:scale-125 duration-300`}
-                >
+                    style={{ opacity: 0.8 }}>
                     <social.icon size={28} className="flex-shrink-0" />
                 </a>
             </li>
@@ -109,14 +110,14 @@ export function Footer({ setCurrentPage }: FooterProps) {
     {/* Column 3: Quick Links (Pages) */}
 <div className="md:col-span-1 ">
     <h3 className="text-lg font-semibold mb-4 text-white">Quick Links </h3> {/* Increased mb-3 to mb-4 */}
-    
+
     {/* List structure remains the same */}
     <ul className="grid md:grid-cols-2 gap-x-4 gap-y-1"> 
         {navItems.map((item) => (
             <li key={item.id}>
                 <button
                     onClick={() => handleNavClick(item.id)}
-                    className="text-xs text-gray-300 hover:text-red-600 transition-colors cursor-pointer"
+                    className="text-xs text-gray-300 hover:text-red-600 transition-colors cursor-pointer" style={{opacity: 0.8}}
                 >
                     {item.label}
                 </button>
@@ -129,22 +130,33 @@ export function Footer({ setCurrentPage }: FooterProps) {
             
             {/* Column 2: Contact Information - TIGHTENED SPACING */}
             <div className="md:col-span-1">
-                <h3 className="text-lg font-semibold mb-4 text-white">Contact Us </h3> {/* Increased mb-3 to mb-4 */}
-                <ul className="space-y-2 text-xs"> {/* Increased space-y-1 to space-y-2 */}
-                    {contactInfo.map((item, index) => (
-                        <li key={index} className="flex items-start text-gray-300">
-                           
-                            {item.isLink ? (
-                                <a href={item.href} className="hover:text-red-600 transition-colors">
-                                    {item.text}
-                                </a>
-                            ) : (
-                                <span>{item.text}</span>
-                            )}
-                        </li>
-                    ))}
-                </ul>
-            </div>
+    <h3 className="text-lg font-semibold mb-4 text-white" >Contact Us </h3>
+    <ul className="space-y-4 text-xs">
+        {contactInfo.map((item, index) => (
+            <li key={index} className="flex items-start text-gray-300">
+                
+                {/* Check if the item is NOT a link (i.e., it's the static address) 
+                    and apply the opacity style directly to the <span> or <a> tag. */}
+                {item.isLink ? (
+                    // FULL OPACITY for links (Email/Phone)
+                    <a 
+                        href={item.href} 
+                        className="hover:text-red-600 transition-colors" 
+                        style={{ opacity: 1.0 }} 
+                    >
+                        {item.text}
+                    </a>
+                    
+                ) : (
+                    // 0.8 OPACITY for static address (where item.isLink is false)
+                    <span style={{ opacity: 0.8 }}>
+                        {item.text}
+                    </span>
+                )}
+            </li>
+        ))}
+    </ul>
+</div>
         </div>
         
 
@@ -154,7 +166,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
         <div className="mt-10 pt-6 border-t border-gray-700 text-center">
     <p 
         className="text-xs text-white py-4" // ✅ ADDED: py-2 for height
-        style={{ backgroundColor: '#111' }}  
+        style={{ backgroundColor: '#111', opacity: 0.8 }} 
     >
         &copy; {new Date().getFullYear()} Copyright Shrideepmala Films Pvt. Ltd. All Rights Reserved.
     </p>
