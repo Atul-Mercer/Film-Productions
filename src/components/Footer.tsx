@@ -36,7 +36,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
 
   // Contact Info based on search results for SHRIDEEPMALA FILMS PRIVATE LIMITED
   const contactInfo = [
-    { icon: MapPin, text: 'SHRIDEEPMALA FILMS PRIVATE LIMITED  Inlaks Nagar, Yari Road, Versova, Andheri West,Mumbai, Maharashtra - 400061' },
+    { icon: MapPin, text: 'SHRIDEEPMALA FILMS PRIVATE LIMITED  Inlaks Nagar, Yari Road, Versova, Andheri West, Mumbai, Maharashtra - 400061' },
     { icon: Mail, text: 'shrideepmalafilms@gmail.com', isLink: true, href: 'shrideepmalafilms@gmail.com' },
     { icon: Phone, text: '+91-9565813272', isLink: true, href: 'tel:+91-9565813272' }, // Placeholder phone
   ];
@@ -84,8 +84,8 @@ export function Footer({ setCurrentPage }: FooterProps) {
         className="text-xs text-gray-300 mb-4 "
         style={{ marginLeft: '30px' }}
     > 
-        Shri Deepmala Films is committed to producing high-quality <br /> compelling 
-        cinema, web series, and visual content, bringing <br /> captivating stories to life on screen.
+        Shri Deepmala Films is committed to producing high<br /> quality compelling 
+        cinema, web series, and visual <br /> content, bringing  captivating stories to life on screen.
     </p>
 
     {/* Social Media Icons: Added ml-[19px] for margin-left */}

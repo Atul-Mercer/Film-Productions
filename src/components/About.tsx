@@ -76,7 +76,7 @@ happen.`    ,
       <div className="text-center mb-16 "> {/* ⬅️ ADDED: -mt-[60px] */}
     <h1 className="text-2xl md:text-4xl mb-6 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>The Company</h1>
     <i className="text-xl text-gray-500 max-w-3xl mx-auto " style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
-        Welcome to Shrideepmala Films Pvt. Ltd. Founded by Ms. Deep Mala Srivastava and Mr. Anil Dhakad
+        Welcome to Shrideepmala Films Pvt. Ltd. Founded by Ms. Deep Mala Srivastava and Mr. Anil Dhakad.
     </i>
 </div>
 
@@ -85,7 +85,7 @@ happen.`    ,
             <ImageWithFallback
               src={crop}
               alt="Production Set"
-              className="w-full  rounded-lg shadow-lg" style={{height: '410px'}}
+              className="w-full object-cover rounded-lg shadow-lg" style={{height: '410px'}}
             />
           </div>
           <div>

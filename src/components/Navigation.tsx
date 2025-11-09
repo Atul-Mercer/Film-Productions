@@ -1,7 +1,7 @@
-import { Icon, Menu, X } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
+import { useState } from 'react';
 import logos from '../assets/Logo/SHRI.png';
-import './Navigation.css'; // 👈 Import your custom CSS
+import './Navigation.css';
 
 interface NavigationProps {
   currentPage: string;
@@ -10,8 +10,6 @@ interface NavigationProps {
 
 export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
   const brandColor = '#D1A666';
 
   const navItems = [
@@ -29,25 +27,11 @@ export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
     setMobileMenuOpen(false);
   };
 
-  // Scroll logic
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 60);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const linkBaseClass = scrolled
-    ? 'text-gray-400 hover:text-red-600'
-    : 'text-white hover:text-red-600';
-  const linkActiveClass = 'text-red-600';
-
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className="navbar">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo and Name */}
+          {/* Logo */}
           <div
             className="cursor-pointer flex items-center space-x-3"
             onClick={() => handleNavClick('home')}
@@ -65,14 +49,16 @@ export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
             </span>
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
                 className={`text-sm transition-colors ${
-                  currentPage === item.id ? linkActiveClass : linkBaseClass
+                  currentPage === item.id
+                    ? 'text-red-600'
+                    : 'text-gray-300 hover:text-red-600'
                 }`}
               >
                 {item.label}
@@ -89,16 +75,16 @@ export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Nav */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-4 bg-black border-t border-gray-700">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`block w-full text-left transition-colors text-white ${
+                className={`block w-full text-left transition-colors ${
                   currentPage === item.id
-                    ? linkActiveClass
+                    ? 'text-red-600'
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
