@@ -71,7 +71,7 @@ export function UpcomingProjects() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-4xl mb-6 text-gray-900" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Upcoming Projects</h1>
           <i className="text-xl text-gray-500 max-w-3xl mx-auto" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>
-            Get a sneak peek at our exciting lineup of films, series, and special projects
+            Get a sneak peek at our exciting lineup of films, series, and special projects.
           </i>
         </div>
 
