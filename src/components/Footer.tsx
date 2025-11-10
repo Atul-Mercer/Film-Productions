@@ -165,7 +165,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
         {/* --- */}
         
         {/* Copyright Section */}
-        <div className="mb-2 pt-6 border-t border-gray-700 text-center" style={{ marginTop: '-30px' }}>
+        <div className="mb-2 pt-6 border-t border-gray-700 text-center" style={{ marginTop: '-70px' }}>
     <p 
         className="text-xs text-white py-4" // ✅ ADDED: py-2 for height
         style={{ backgroundColor: '#111', opacity: 0.8 }} 
