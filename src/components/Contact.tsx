@@ -43,7 +43,7 @@ export function Contact() {
                       <Input
                         id="name"
                         placeholder="Full Name "
-                        className="bg-gray-50 border-gray-300 focus:border-red-600  focus:ring-red-600  text-gray-900 rounded-none" style={{ fontSize: '14px' }}// ⬅️ Changed rounded-lg to rounded-none
+                        className=" border-gray-300 focus:border-red-600  focus:ring-red-600  text-gray-900 rounded-none" style={{ fontSize: '14px' , backgroundColor: 'white'}}// ⬅️ Changed rounded-lg to rounded-none
                       />
                     </div>
                     <div>
@@ -52,7 +52,7 @@ export function Contact() {
                         id="email"
                         type="email"
                         placeholder="Email"
-                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none" style={{ fontSize: '14px' }}// ⬅️ Changed rounded-lg to rounded-none
+                        className=" border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none" style={{ fontSize: '14px' , backgroundColor: 'white'}}// ⬅️ Changed rounded-lg to rounded-none
                       />
                     </div>
                   </div>
@@ -63,7 +63,7 @@ export function Contact() {
                       <Input
                         id="phone"
                         placeholder="Phone Number"
-                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none" style={{ fontSize: '14px' }}// ⬅️ Changed rounded-lg to rounded-none
+                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none" style={{ fontSize: '14px' , backgroundColor: 'white'}}// ⬅️ Changed rounded-lg to rounded-none
                       />
                     </div>
                     <div>
@@ -71,7 +71,7 @@ export function Contact() {
                       <Input
                         id="subject"
                         placeholder="Subject"
-                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none"  style={{ fontSize: '14px' }}// ⬅️ Changed rounded-lg to rounded-none
+                        className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 text-gray-900 rounded-none"  style={{ fontSize: '14px' , backgroundColor: 'white'}}// ⬅️ Changed rounded-lg to rounded-none
                       />
                     </div>
                   </div>
@@ -92,7 +92,7 @@ export function Contact() {
                       id="message"
                       placeholder="Message"
                       rows={6}
-                      className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 resize-none text-gray-900 rounded-none" style={{ fontSize: '14px' }}// ⬅️ Changed rounded-lg to rounded-none
+                      className="bg-gray-50 border-gray-300 focus:border-red-600 focus:ring-red-600 resize-none text-gray-900 rounded-none" style={{ fontSize: '14px' , backgroundColor: 'white'}}// ⬅️ Changed rounded-lg to rounded-none
                     />
                   </div>
 

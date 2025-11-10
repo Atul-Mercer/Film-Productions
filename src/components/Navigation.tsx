@@ -55,12 +55,13 @@ export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`text-sm transition-colors ${
+                className={` transition-colors ${
                   currentPage === item.id
                     ? 'text-red-600'
                     : 'text-gray-300 hover:text-red-600'  
                 }`}
-                style={{  opacity: 0.8 }}>
+                style={{ fontSize: '15px' }}
+              >
                 {item.label}
               </button>
             ))}

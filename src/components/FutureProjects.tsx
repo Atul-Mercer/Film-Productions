@@ -256,7 +256,7 @@ forces that confine them…`,
               key={project.id} 
               className="bg-white border-gray-200 hover:border-red-600/50 hover:shadow-lg transition-all overflow-hidden group"
             >
-             <CardContent className="p-0"  style={{ height: '348px' }}>
+             <CardContent className="p-0"  style={{ height: '347px' }}>
   <div className="grid md:grid-cols-12 gap-0">
     {/* Icon Section – NO GRADIENT, IMAGE COVERS FULL AREA */}
     <div className="md:col-span-2 flex items-center justify-center overflow-hidden">
