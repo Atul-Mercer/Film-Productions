@@ -59,7 +59,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
 {/* Column 1: Logo and About Company */}
 <div 
     className="md:col-span-1"
-    style={{ marginTop: '-42px' }} // ✅ ADDED: Inline negative margin top
+    style={{ marginTop: '-26px' }} // ✅ ADDED: Inline negative margin top
 > 
 
     {/* Logo and Company Name (No change here) */}
