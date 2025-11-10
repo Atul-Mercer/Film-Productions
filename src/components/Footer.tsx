@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube, Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Mail, MapPin, Phone,Linkedin } from 'lucide-react';
 
 // Assuming the logo path is relative to the Footer component, or passed as a prop
 import logos from '../assets/Logo/SHRI.png'; 
@@ -27,6 +27,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
     { name: 'YouTube', icon: Youtube, link: 'https://youtube.com/@shrideepmalafilms?si=ET2xCCThKjns0twe', color: 'hover:text-red-600' },
     { name: 'Instagram', icon: Instagram, link: 'https://www.instagram.com/shri_deepmala_films?igsh=c2xwbWZ0MGg1MDU2&utm_source=qr', color: 'hover:text-pink-500' },
     { name: 'Facebook', icon: Facebook, link: 'https://www.facebook.com/dimple25dec', color: 'hover:text-blue-600' },
+    { name: 'LinkedIn', icon: Linkedin, link: 'https://www.linkedin.com/company/shrideepmalafilms/', color: 'hover:text-blue-400' },
   ];
 
   const handleNavClick = (id: string) => {
@@ -110,7 +111,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
 
     {/* Column 3: Quick Links (Pages) */}
 <div className="md:col-span-1 ">
-    <h3 className="text-lg font-semibold mb-4 text-white">Quick Links </h3> {/* Increased mb-3 to mb-4 */}
+    <h3 className="text-lg font-semibold mb-4 text-white"  style={{ marginTop: '15px' }}>Quick Links </h3> {/* Increased mb-3 to mb-4 */}
 
     {/* List structure remains the same */}
     <ul className="grid md:grid-cols-2 gap-x-4 gap-y-1"> 
@@ -131,7 +132,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
             
             {/* Column 2: Contact Information - TIGHTENED SPACING */}
             <div className="md:col-span-1">
-    <h3 className="text-lg font-semibold mb-4 text-white" >Contact Us </h3>
+    <h3 className="text-lg font-semibold mb-4 text-white" style={{ marginTop: '15px' }}>Contact Us </h3>
     <ul className="space-y-2 text-xs">
         {contactInfo.map((item, index) => (
             <li 
