@@ -101,7 +101,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
                     rel="noopener noreferrer"
                     className={`flex items-center justify-start text-gray-300 ${social.color} transition-transform hover:scale-125 duration-300`}
                     style={{ opacity: 0.8 }}>
-                    <social.icon size={28} className="flex-shrink-0" />
+                    <social.icon size={18} className="flex-shrink-0" />
                 </a>
             </li>
         ))}
