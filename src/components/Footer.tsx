@@ -52,7 +52,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
     <div className="max-w-7xl mx-auto px-8 sm:px-8 lg:px-10"> 
         
         {/* Main 3-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2  mb-12" style={{marginTop : '80px'}}> {/* ⬅️ CHANGE: Increased mt-8 to mt-12. Adjusted gap to a moderate gap-4 */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2  mb-12" style={{marginTop : '70px'}}> {/* ⬅️ CHANGE: Increased mt-8 to mt-12. Adjusted gap to a moderate gap-4 */}
 
             
             {/* Column 1: Logo and About Company */}
@@ -168,8 +168,8 @@ export function Footer({ setCurrentPage }: FooterProps) {
         {/* Copyright Section */}
         <div className="mb-2 pt-6 border-t border-gray-700 text-center" style={{ marginTop: '-70px' }}>
     <p 
-        className="text-xs text-white py-4" // ✅ ADDED: py-2 for height
-        style={{ backgroundColor: '#111', opacity: 0.8 }} 
+        className="text-xs text-white py-3" // ✅ ADDED: py-2 for height
+        style={{ backgroundColor: '#0A0A0A', opacity: 0.8 }} 
     >
         &copy; {new Date().getFullYear()} Copyright Shrideepmala Films Pvt. Ltd. All Rights Reserved.
     </p>

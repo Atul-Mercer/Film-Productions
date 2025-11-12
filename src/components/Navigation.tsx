@@ -28,21 +28,21 @@ export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
   };
 
   return (
-    <nav className="navbar" style={{ height: '80px' }}>
+    <nav className="navbar" style={{ height: '74px' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" >
         <div className="flex justify-between items-center h-16" >
           {/* Logo */}
           <div
-            className="cursor-pointer flex items-center space-x-3"
+            className="cursor-pointer flex items-center space-x-3" style={{ marginLeft: '-18px'  }}
             onClick={() => handleNavClick('home')}
           >
             <img
               src={logos}
               alt="Shri Deepmala Films Logo"
-              className="h-12 w-auto object-contain mt-2"
+              className="h-12 w-auto object-contain mt-2"  style={{height : '110px'}}
             />
             <span
-              className="text-lg font-semibold tracking-wide font-serif"
+              className="text-md font-semibold tracking-wide font-serif"
               style={{ color: brandColor }}
             >
               SHRI DEEPMALA FILMS

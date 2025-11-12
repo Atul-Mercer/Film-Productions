@@ -140,11 +140,11 @@ export function Home() {
                     {item.title}
                   </h1>
 
-                  <p className="text-xl text-white/90 mb-8 max-w-2xl leading-relaxed"style={{ marginLeft: '30px' }}>
+                  <p className="text-lg text-white/90 mb-8 max-w-2xl leading-tight"style={{ marginLeft: '30px' }}>
                     {item.description}
                   </p>
 
-                  <button className="px-8 py-4 bg-red-600 text-white hover:bg-red-700 transition-colors flex items-center gap-2 group rounded-lg shadow-lg hover:shadow-xl"style={{ marginLeft: '30px' }}>
+                  <button className="px-4 py-2 bg-red-600 text-white hover:bg-red-700 transition-colors flex items-center gap-2 group rounded-lg shadow-lg hover:shadow-xl text-md"style={{ marginLeft: '30px' }}>
                     <Play size={20} className="group-hover:scale-110 transition-transform" />
                     Watch Trailer
                   </button>
