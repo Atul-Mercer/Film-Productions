@@ -39,7 +39,7 @@ export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
             <img
               src={logos}
               alt="Shri Deepmala Films Logo"
-              className="h-12 w-auto object-contain mt-2"  style={{height : '110px'}}
+              className="h-12 w-auto object-contain mt-2"  style={{height : '110px', marginBottom : '8px'}}
             />
             <span
               className="text-md font-semibold tracking-wide font-serif"
@@ -78,7 +78,7 @@ export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
 
         {/* Mobile Nav */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 space-y-4 bg-black border-t border-gray-700">
+          <div className="md:hidden py-4 space-y-4 bg-black border-t border-gray-700" style={{backgroundColor:"black"}}>
             {navItems.map((item) => (
               <button
                 key={item.id}

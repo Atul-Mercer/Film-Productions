@@ -106,7 +106,7 @@ export function Home() {
         <Swiper
           modules={[Autoplay, Pagination, EffectFade, Navigation]}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
-          pagination={{ clickable: true, dynamicBullets: true }}
+          pagination={{ clickable: true, dynamicBullets: true  }}
           effect="fade"
           fadeEffect={{ crossFade: true }}
           loop={true}
@@ -123,7 +123,7 @@ export function Home() {
                 <ImageWithFallback
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-1000 ease-in-out scale-100 hover:scale-105" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}
+                  className=" w-full h-full object-cover transition-transform duration-1000 ease-in-out scale-100 hover:scale-105" style={{ fontFamily: 'Roboto Condensed, sans-serif' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
               </div>

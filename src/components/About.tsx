@@ -80,16 +80,17 @@ happen.`    ,
         Welcome to Shrideepmala Films Pvt. Ltd. Founded by Ms. Deep Mala Srivastava and Mr. Anil Dhakad.
     </i>
 </div>
-
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20" >
-          <div className="relative h-[00px]">
-            <ImageWithFallback
-              src={crop}
-              alt="Production Set"
-              className="object-cover rounded-lg shadow-lg" style={{height: '450px' , marginLeft: '60px'}}
-            />
-          </div>
-          <div>
+<div className="grid md:grid-cols-2 gap-12 items-center mb-20" >
+    <div className="relative h-[450px]"> {/* Adjusted height to 450px for clarity, assuming h-[00px] was a typo */}
+        <ImageWithFallback
+            src={crop}
+            alt="Production Set"
+            // ✅ FIX: Removed inline marginLeft and added responsive ml-16
+            className="w-full h-full object-cover rounded-lg shadow-lg md:ml-16" 
+            style={{ height: '450px' }} // Height remains via inline style or h-[450px]
+        />
+    </div>
+    <div>
        
             <div className="space-y-4 text-gray-600 text-sm">
               

@@ -1,4 +1,6 @@
-import { Facebook, Instagram, Youtube, Mail, MapPin, Phone,Linkedin } from 'lucide-react';
+import * as React from 'react';
+import { Facebook, Instagram, Youtube, Mail, MapPin, Phone, Linkedin } from 'lucide-react';
+import { useState, useEffect } from 'react'; // Import hooks for responsiveness
 
 // Assuming the logo path is relative to the Footer component, or passed as a prop
 import logos from '../assets/Logo/SHRI.png'; 
@@ -8,8 +10,30 @@ interface FooterProps {
   setCurrentPage: (page: string) => void;
 }
 
+// Define the breakpoint for desktop/laptop view (768px is Tailwind's default 'md')
+const MD_BREAKPOINT = 768;
+const CUSTOM_MARGIN = '30px';
+
 export function Footer({ setCurrentPage }: FooterProps) {
   
+  // 1. State to track if the screen is desktop size
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= MD_BREAKPOINT); 
+
+  // 2. Effect to update the state on resize
+  useEffect(() => {
+      const handleResize = () => {
+          setIsDesktop(window.innerWidth >= MD_BREAKPOINT);
+      };
+
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+  }, []); 
+
+  // Conditional Styles for Laptop View
+  // These styles are applied only if isDesktop is true, fixing the margin issue.
+  const descriptionMarginStyle = isDesktop ? { marginLeft: CUSTOM_MARGIN, opacity: 0.8 } : { opacity: 0.8 };
+  const socialUlMarginStyle = isDesktop ? { marginLeft: CUSTOM_MARGIN } : {};
+
   // Navigation items from your header component
   const navItems = [
     { id: 'home', label: 'Home' },
@@ -18,7 +42,6 @@ export function Footer({ setCurrentPage }: FooterProps) {
     { id: 'future', label: 'Future Projects' },
     { id: 'services', label: 'Services' },
     { id: 'talent', label: 'In-House Talents' },
-    // { id: 'blog', label: 'Blog' },
     { id: 'contact', label: 'Contact' },
   ];
    
@@ -38,7 +61,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
   // Contact Info based on search results for SHRIDEEPMALA FILMS PRIVATE LIMITED
   const contactInfo = [
     { icon: MapPin, text: 'SHRIDEEPMALA FILMS PRIVATE LIMITED  Inlaks Nagar, Yari Road, Versova, Andheri West, Mumbai, Maharashtra - 400061' },
-    { icon: Phone, text: '+91-9565813272', isLink: true, href: 'tel:+91-9565813272' }, // Placeholder phone
+    { icon: Phone, text: '+91-9565813272', isLink: true, href: 'tel:+91-9565813272' },
     { icon: Mail, text: 'shrideepmalafilms@gmail.com', isLink: true, href: 'shrideepmalafilms@gmail.com' },
 
   ];
@@ -47,66 +70,65 @@ export function Footer({ setCurrentPage }: FooterProps) {
   const brandColor = '#D1A666';
 
   return (
-    <footer className="bg-black text-white pt-10 pb-8 "> {/* ⬅️ CHANGE: Increased pt-6 to pt-10 and pb-4 to pb-8 */}
-    {/* Ensure px-6 sm:px-8 lg:px-10 is providing enough side margin */}
+    <footer className="bg-black text-white pt-10 pb-8 ">
     <div className="max-w-7xl mx-auto px-8 sm:px-8 lg:px-10"> 
         
         {/* Main 3-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2  mb-12" style={{marginTop : '70px'}}> {/* ⬅️ CHANGE: Increased mt-8 to mt-12. Adjusted gap to a moderate gap-4 */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2  mb-12" style={{marginTop : '70px'}}>
 
             
             {/* Column 1: Logo and About Company */}
-   {/* Column 1: Logo and About Company */}
-{/* Column 1: Logo and About Company */}
-<div 
-    className="md:col-span-1"
-    style={{ marginTop: '-26px' }} // ✅ ADDED: Inline negative margin top
-> 
+            <div 
+                className="md:col-span-1 md:ml-[-27px]"
+                style={{ marginTop: '-26px' }} // Negative top margin remains
+            > 
+                {/* Logo and Company Name (No change here) */}
+                <div 
+                    className="flex items-center space-x-3 mb-2" 
+                    style={{ marginBottom: '-10px' ,}}
+                > 
+                    <img
+                        src={logos}
+                        alt="Shri Deepmala Films Logo"
+                        className="h-12 w-auto object-contain" 
+                    />
+                    <span
+                        className="text-base font-semibold tracking-wide text-white "
+                        style={{ color: brandColor }}
+                    >
+                        SHRI DEEPMALA FILMS
+                    </span>
+                </div>
 
-    {/* Logo and Company Name (No change here) */}
-    <div 
-        className="flex items-center space-x-3 mb-2" 
-        style={{ marginBottom: '-10px' }}
-    > 
-        <img
-            src={logos}
-            alt="Shri Deepmala Films Logo"
-            className="h-12 w-auto object-contain" 
-        />
-        <span
-            className="text-base font-semibold tracking-wide text-white "
-            style={{ color: brandColor }}
-        >
-            SHRI DEEPMALA FILMS
-        </span>
-    </div>
+                {/* Description: Uses conditional margin style */}
+                <p 
+                    className="text-xs text-gray-300 mb-4" 
+                    style={descriptionMarginStyle} // ✅ APPLIED: Margin is 30px only on desktop
+                > 
+                    Shri Deepmala Films is dedicated
+                    to redefining <br />the art of cinema. We celebrate storytelling in <br />all its forms-through captivating theatre, immersive workshops, and visionary mentorship programs. <br /> Our mission is to discover and nurture extraordinary <br />talents, offering them a world-class stage to shine <br /> and share their art with global audiences.
+                </p>
+                <br />
 
-    {/* Description: Added ml-[19px] for margin-left */}
-    <p 
-        className="text-xs text-gray-300 mb-4 "
-        style={{ marginLeft: '30px', opacity: 0.8 }}
-    > 
-       Shri Deepmala Films is dedicated
-       to redefining <br />the art of cinema. We celebrate storytelling in <br />all its forms-through captivating theatre, immersive workshops, and visionary mentorship programs. <br /> Our mission is to discover and nurture extraordinary <br />talents, offering them a world-class stage to shine <br /> and share their art with global audiences.
-    </p>
-    <br />
-
-    {/* Social Media Icons: Added ml-[19px] for margin-left */}
-    <ul className="flex justify-start gap-4 ml-[19px]"  style={{ marginLeft: '30px' ,opacity: 0.8}}> 
-        {socialLinks.map((social) => (
-            <li key={social.name}>
-                <a
-                    href={social.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center justify-start text-gray-300 ${social.color} transition-transform hover:scale-125 duration-300`}
-                    style={{ opacity: 0.8 }}>
-                    <social.icon size={18} className="flex-shrink-0" />
-                </a>
-            </li>
-        ))}
-    </ul>
-</div>
+                {/* Social Media Icons: Uses conditional margin style */}
+                <ul 
+                    className="flex justify-start gap-4"
+                    style={socialUlMarginStyle} // ✅ APPLIED: Margin is 30px only on desktop
+                > 
+                    {socialLinks.map((social) => (
+                        <li key={social.name}>
+                            <a
+                                href={social.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`flex items-center justify-start text-gray-300 ${social.color} transition-transform hover:scale-125 duration-300`}
+                                style={{ opacity: 0.8 }}>
+                                <social.icon size={18} className="flex-shrink-0" />
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
 
 
     {/* Column 3: Quick Links (Pages) */}
@@ -167,13 +189,13 @@ export function Footer({ setCurrentPage }: FooterProps) {
         
         {/* Copyright Section */}
         <div className="mb-2 pt-6 border-t border-gray-700 text-center" style={{ marginTop: '-70px' }}>
-    <p 
-        className="text-xs text-white py-3" // ✅ ADDED: py-2 for height
-        style={{ backgroundColor: '#0A0A0A', opacity: 0.8 }} 
-    >
-        &copy; {new Date().getFullYear()} Copyright Shrideepmala Films Pvt. Ltd. All Rights Reserved.
-    </p>
-</div>
+            <p 
+                className="text-xs text-white py-3"
+                style={{ backgroundColor: '#0A0A0A', opacity: 0.8 }} 
+            >
+                &copy; {new Date().getFullYear()} Copyright Shrideepmala Films Pvt. Ltd. All Rights Reserved.
+            </p>
+        </div>
     </div>
 </footer>
   );

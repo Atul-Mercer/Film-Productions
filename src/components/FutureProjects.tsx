@@ -146,12 +146,12 @@ uninvited.`,
       type: 'Genre - Suspense Thriller',
       image: RETINA,
       timeline: '2025-2026',
-description: `Inside a quiet house, two women find themselves
-trapped—not by walls, but by a man’s control. What begins as ordinary domestic life slowly unravels into a web of manipulation, desire, and silent
-suffering. When fear spreads too much, something
-has to be done, the women must decide: will they
-continue to endure, or will they rise against the
-forces that confine them…`,
+      description: `Inside a quiet house, two women find themselves
+      trapped-not by walls, but by a man’s control. What begins as ordinary domestic life slowly unravels into a web of manipulation, desire, and silent
+      suffering. When fear spreads too much, something
+      has to be done, the women must decide: will they
+      continue to endure, or will they rise against the
+      forces that confine them…`,
         director: 'Director : Deep Mala Srivastava & Durg Raj Alok Darshi',
         Writer : 'Writer : Deep Mala ',
       highlights: [
@@ -350,7 +350,7 @@ forces that confine them…`,
                                 Expansion & Innovation
                                 <br />
                                 <p className="text-sm">
-                                    Development of two cross-genre films exploring human emotion through “Navarasa.”, Strengthening in-house creative lab for writers, composers, and editors, Participation in global co-production markets, Focus on building an international audience and critical recognition.f
+                                    Development of two cross-genre films exploring human emotion through “Navarasa.”, Strengthening in-house creative lab for writers, composers, and editors, Participation in global co-production markets, Focus on building an international audience and critical recognition.
                                 </p>
                             </span>
                         )}

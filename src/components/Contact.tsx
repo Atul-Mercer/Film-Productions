@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import { Card, CardContent } from './ui/card';
-import { Mail, Phone, MapPin, Send, Facebook, Instagram, Youtube } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
@@ -176,23 +176,32 @@ export function Contact() {
     <Card className="bg-white border-gray-200 shadow-lg hover:shadow-xl transition-shadow lg:col-span-1">
       <CardContent className="p-6 text-center">
         <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-red-600/10 flex items-center justify-center">
-          {/* <Phone className="text-red-600" size={28} /> */}
+          {/* Removed phone icon here as this is now the Follow Us card */}
         </div>
         <h3 className="font-semibold text-gray-900 mb-2">Follow Us</h3>
         <div className="flex justify-center gap-4">
+  {/* Facebook */}
   <a href="https://www.facebook.com/dimple25dec" target="_blank" rel="noopener noreferrer">
     <button className="w-12 h-10 rounded-full bg-[#D1A666] shadow-lg hover:bg-red-600 hover:text-white hover:shadow-xl transition-all duration-300 group flex items-center justify-center">
       <Facebook size={22} className="text-gray-900 group-hover:text-white transition-colors" />
     </button>
   </a>
+  {/* Instagram */}
   <a href="https://www.instagram.com/shri_deepmala_films" target="_blank" rel="noopener noreferrer">
     <button className="w-12 h-10 rounded-full bg-[#D1A666] shadow-lg hover:bg-red-600 hover:text-white hover:shadow-xl transition-all duration-300 group flex items-center justify-center">
       <Instagram size={22} className="text-gray-900 group-hover:text-white transition-colors" />
     </button>
   </a>
+  {/* YouTube */}
   <a href="https://youtube.com/@shrideepmalafilms" target="_blank" rel="noopener noreferrer">
     <button className="w-12 h-10 rounded-full bg-[#D1A666] shadow-lg hover:bg-red-600 hover:text-white hover:shadow-xl transition-all duration-300 group flex items-center justify-center">
       <Youtube size={22} className="text-gray-900 group-hover:text-white transition-colors" />
+    </button>
+  </a>
+  {/* ✅ ADDED: LinkedIn */}
+  <a href="https://www.linkedin.com/company/shrideepmalafilms/" target="_blank" rel="noopener noreferrer">
+    <button className="w-12 h-10 rounded-full bg-[#D1A666] shadow-lg hover:bg-red-600 hover:text-white hover:shadow-xl transition-all duration-300 group flex items-center justify-center">
+      <Linkedin size={22} className="text-gray-900 group-hover:text-white transition-colors" />
     </button>
   </a>
 </div>

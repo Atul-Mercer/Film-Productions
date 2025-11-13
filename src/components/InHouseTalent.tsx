@@ -17,7 +17,7 @@ export function InHouseTalent() {
     { id: 3, name: 'Arjun Singh Shekhawat', image: Arjun },
     { id: 4, name: 'Abhishek Thakur', image: AbhishekThakur },
     { id: 5, name: 'Amit Sinha', image: AmitSinha },
-    { id: 6, name: 'Priyanka Bajaj', image: PriyankaBeia },
+    { id: 6, name: 'Priyankka Beia', image: PriyankaBeia },
     { id: 7, name: 'Shashank Prajapati', image: ShashankPrajapati },
     { id: 8, name: 'Shilpi Sinha', image: ShilpiSinha },
     { id: 9, name: 'Durgraj Alok Darshi', image: Durgraj },
