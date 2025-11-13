@@ -106,7 +106,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
                     style={descriptionMarginStyle} // ✅ APPLIED: Margin is 30px only on desktop
                 > 
                     Shri Deepmala Films is dedicated
-                    to redefining <br />the art of cinema. We celebrate storytelling in <br />all its forms-through captivating theatre, immersive workshops, and visionary mentorship programs. <br /> Our mission is to discover and nurture extraordinary <br />talents, offering them a world-class stage to shine <br /> and share their art with global audiences.
+                    to redefining the art of cinema. We celebrate storytelling in all its forms-through captivating theatre, immersive workshops, and visionary mentorship programs.  Our mission is to discover and nurture extraordinary talents, offering them a world-class stage to shine  and share their art with global audiences.
                 </p>
                 <br />
 
