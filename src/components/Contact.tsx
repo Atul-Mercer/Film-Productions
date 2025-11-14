@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import { Card, CardContent } from './ui/card';
-import { Mail, Phone, MapPin, Send, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Facebook, Instagram, Youtube, Linkedin , Twitter} from 'lucide-react';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
@@ -198,10 +198,16 @@ export function Contact() {
       <Youtube size={22} className="text-gray-900 group-hover:text-white transition-colors" />
     </button>
   </a>
-  {/* ✅ ADDED: LinkedIn */}
+  {/* LinkedIn */}
   <a href="https://www.linkedin.com/company/shrideepmalafilms/" target="_blank" rel="noopener noreferrer">
     <button className="w-12 h-10 rounded-full bg-[#D1A666] shadow-lg hover:bg-red-600 hover:text-white hover:shadow-xl transition-all duration-300 group flex items-center justify-center">
       <Linkedin size={22} className="text-gray-900 group-hover:text-white transition-colors" />
+    </button>
+  </a>
+  {/* ✅ ADDED: X (Twitter) */}
+  <a href="https://x.com/DeepmalaFilms" target="_blank" rel="noopener noreferrer">
+    <button className="w-12 h-10 rounded-full bg-[#D1A666] shadow-lg hover:bg-red-600 hover:text-white hover:shadow-xl transition-all duration-300 group flex items-center justify-center">
+      <Twitter size={22} className="text-gray-900 group-hover:text-white transition-colors" />
     </button>
   </a>
 </div>

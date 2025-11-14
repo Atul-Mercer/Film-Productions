@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Facebook, Instagram, Youtube, Mail, MapPin, Phone, Linkedin } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Mail, MapPin, Phone, Linkedin , Twitter} from 'lucide-react';
 import { useState, useEffect } from 'react'; // Import hooks for responsiveness
 
 // Assuming the logo path is relative to the Footer component, or passed as a prop
@@ -51,7 +51,9 @@ export function Footer({ setCurrentPage }: FooterProps) {
     { name: 'Instagram', icon: Instagram, link: 'https://www.instagram.com/shri_deepmala_films?igsh=c2xwbWZ0MGg1MDU2&utm_source=qr', color: 'hover:text-pink-500' },
     { name: 'Facebook', icon: Facebook, link: 'https://www.facebook.com/dimple25dec', color: 'hover:text-blue-600' },
     { name: 'LinkedIn', icon: Linkedin, link: 'https://www.linkedin.com/company/shrideepmalafilms/', color: 'hover:text-blue-400' },
-  ];
+    // ✅ ADDED: X (Twitter) Link
+    { name: 'X (Twitter)', icon: Twitter, link: 'https://x.com/DeepmalaFilms', color: 'hover:text-gray-400' }, 
+];
 
   const handleNavClick = (id: string) => {
     setCurrentPage(id); 
