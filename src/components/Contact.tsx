@@ -223,7 +223,7 @@ export function Contact() {
               <h3 className="text-xl font-bold text-gray-900 mb-3"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Production Inquiries</h3>
               <p className="text-gray-600 mb-4 text-sm">For film and series production opportunities</p>
               <a href="mailto:shrideepmalafilms@gmail.com" className="text-red-600 hover:text-red-700 font-medium">
-                shrideepmalafilms@gmail.com
+              deep@shrideepmalafilms.com
               </a>
             </CardContent>
           </Card>
@@ -233,7 +233,7 @@ export function Contact() {
               <h3 className="text-xl font-bold text-gray-900 mb-3"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Casting & Talent</h3>
               <p className="text-gray-600 mb-4 text-sm">Submit your profile or casting inquiries</p>
               <a href="mailto:shrideepmalafilms@gmail.com" className="text-red-600 hover:text-red-700 font-medium">
-                shrideepmalafilms@gmail.com
+              talent@shrideepmalafilms.com
               </a>
             </CardContent>
           </Card>
@@ -243,7 +243,7 @@ export function Contact() {
               <h3 className="text-xl font-bold text-gray-900 mb-3"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Media & Press</h3>
               <p className="text-gray-600 mb-4 text-sm">Press releases and media inquiries</p>
               <a href="mailto:shrideepmalafilms@gmail.com" className="text-red-600 hover:text-red-700 font-medium">
-                shrideepmalafilms@gmail.com
+              hello@shrideepmalafilms.com
               </a>
             </CardContent>
           </Card>
