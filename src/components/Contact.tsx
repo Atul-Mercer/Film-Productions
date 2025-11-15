@@ -165,7 +165,7 @@ export function Contact() {
           </p>
           <p>
             <a href="mailto:shrideepmalafilms@gmail.com" className="text-red-600 hover:underline break-all">
-              shrideepmalafilms@gmail.com
+            deep@shrideepmalafilms.com
             </a>
           </p>
         </div>
@@ -221,7 +221,7 @@ export function Contact() {
           <Card className="text-center bg-white shadow-lg hover:shadow-xl transition-shadow mb-12">
             <CardContent className="p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-3"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Production Inquiries</h3>
-              <p className="text-gray-600 mb-4 text-sm">For film and series production opportunities</p>
+              <p className="text-gray-600 mb-4 text-sm">For film and other services Inquiries</p>
               <a href="mailto:shrideepmalafilms@gmail.com" className="text-red-600 hover:text-red-700 font-medium">
               deep@shrideepmalafilms.com
               </a>

@@ -64,7 +64,7 @@ export function Footer({ setCurrentPage }: FooterProps) {
   const contactInfo = [
     { icon: MapPin, text: 'SHRIDEEPMALA FILMS PRIVATE LIMITED  Inlaks Nagar, Yari Road, Versova, Andheri West, Mumbai, Maharashtra - 400061' },
     { icon: Phone, text: '+91-9565813272', isLink: true, href: 'tel:+91-9565813272' },
-    { icon: Mail, text: 'shrideepmalafilms@gmail.com', isLink: true, href: 'shrideepmalafilms@gmail.com' },
+    { icon: Mail, text: 'deep@shrideepmalafilms.com', isLink: true, href: 'deep@shrideepmalafilms.com' },
 
   ];
 
