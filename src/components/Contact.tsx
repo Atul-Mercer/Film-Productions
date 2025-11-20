@@ -238,15 +238,7 @@ export function Contact() {
             </CardContent>
           </Card>
 
-          <Card className="text-center bg-white shadow-lg hover:shadow-xl transition-shadow mb-12">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-3"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Casting & Talent</h3>
-              <p className="text-gray-600 mb-4 text-sm">Submit your profile or casting inquiries</p>
-              <a href="mailto: talent@shrideepmalafilms.com" className="text-red-600 hover:text-red-700 font-medium">
-              talent@shrideepmalafilms.com
-              </a>
-            </CardContent>
-          </Card>
+         
 
 
 
