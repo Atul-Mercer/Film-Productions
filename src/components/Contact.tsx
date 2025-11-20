@@ -100,8 +100,8 @@ export function Contact() {
 
                   <div className="flex justify-center">
                   <button
-  type="submit"
-  className="w-50% max-w-sm mx-auto px-6 py-2 bg-red-600 text-white font-bold text-base rounded-none shadow-xl hover:bg-red-700 hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group" style={{ fontSize: '14px' }}// ⬅️ Changed rounded-xl to rounded-none
+                   type="submit"
+                  className="w-50% max-w-sm mx-auto px-6 py-2 bg-red-600 text-white font-bold text-base rounded-none shadow-xl hover:bg-red-700 hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group" style={{ fontSize: '14px' }}// ⬅️ Changed rounded-xl to rounded-none
 >
   {/* <Send size={20} className="group-hover:translate-x-1 transition-transform" /> */}
   Send Message
@@ -164,7 +164,7 @@ export function Contact() {
             </a>
           </p>
           <p>
-            <a href="mailto:shrideepmalafilms@gmail.com" className="text-red-600 hover:underline break-all">
+            <a href="mailto:deep@shrideepmalafilms.com" className="text-red-600 hover:underline break-all">
             deep@shrideepmalafilms.com
             </a>
           </p>
@@ -222,7 +222,7 @@ export function Contact() {
             <CardContent className="p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-3"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Production Inquiries</h3>
               <p className="text-gray-600 mb-4 text-sm">For film and other services Inquiries</p>
-              <a href="mailto:shrideepmalafilms@gmail.com" className="text-red-600 hover:text-red-700 font-medium">
+              <a href="mailto:deep@shrideepmalafilms.com" className="text-red-600 hover:text-red-700 font-medium">
               deep@shrideepmalafilms.com
               </a>
             </CardContent>
@@ -232,7 +232,7 @@ export function Contact() {
             <CardContent className="p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-3"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Casting & Talent</h3>
               <p className="text-gray-600 mb-4 text-sm">Submit your profile or casting inquiries</p>
-              <a href="mailto:shrideepmalafilms@gmail.com" className="text-red-600 hover:text-red-700 font-medium">
+              <a href="mailto: talent@shrideepmalafilms.com" className="text-red-600 hover:text-red-700 font-medium">
               talent@shrideepmalafilms.com
               </a>
             </CardContent>
@@ -240,9 +240,21 @@ export function Contact() {
 
           <Card className="text-center bg-white shadow-lg hover:shadow-xl transition-shadow mb-12">
             <CardContent className="p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-3"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Casting & Talent</h3>
+              <p className="text-gray-600 mb-4 text-sm">Submit your profile or casting inquiries</p>
+              <a href="mailto: talent@shrideepmalafilms.com" className="text-red-600 hover:text-red-700 font-medium">
+              talent@shrideepmalafilms.com
+              </a>
+            </CardContent>
+          </Card>
+
+
+
+          <Card className="text-center bg-white shadow-lg hover:shadow-xl transition-shadow mb-12">
+            <CardContent className="p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-3"style={{ fontFamily: 'Roboto Condensed, sans-serif' }}>Media & Press</h3>
               <p className="text-gray-600 mb-4 text-sm">Press releases and media inquiries</p>
-              <a href="mailto:shrideepmalafilms@gmail.com" className="text-red-600 hover:text-red-700 font-medium">
+              <a href="mailto:hello@shrideepmalafilms.com" className="text-red-600 hover:text-red-700 font-medium">
               hello@shrideepmalafilms.com
               </a>
             </CardContent>
