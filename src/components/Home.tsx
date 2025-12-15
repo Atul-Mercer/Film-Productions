@@ -67,7 +67,7 @@ export function Home() {
   const featuredItems = [
     {
       image: first,
-      status: 'COMING SOON',
+      status: 'WATCH NOW',
       year: 2025,
       title: 'Another Shade Of Yellow',
       description:
