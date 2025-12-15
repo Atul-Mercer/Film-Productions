@@ -72,6 +72,7 @@ export function Home() {
       title: 'Another Shade Of Yellow',
       description:
         'A woman living alone becomes entangled in her own memories-until the past she refuses to let go of starts to becomes her present.',
+      link: 'https://www.youtube.com/watch?v=jbsDlR6uerg', // Trailer link
     },
     {
       image: second,
@@ -144,10 +145,24 @@ export function Home() {
                     {item.description}
                   </p>
 
+                  {item.link ? (
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-red-600 text-white hover:bg-red-700 transition-colors flex items-center gap-2 group rounded-lg shadow-lg hover:shadow-xl text-md inline-block"
+            style={{ marginLeft: '30px' }}
+          >
+            {/* <Play size={20} className="group-hover:scale-110 transition-transform" /> */}
+            Watch Trailer
+          </a>
+          ) : (
+
                   <button className="px-4 py-2 bg-red-600 text-white hover:bg-red-700 transition-colors flex items-center gap-2 group rounded-lg shadow-lg hover:shadow-xl text-md"style={{ marginLeft: '30px' }}>
-                    <Play size={20} className="group-hover:scale-110 transition-transform" />
+                    {/* <Play size={20} className="group-hover:scale-110 transition-transform" /> */}
                     Watch Trailer
                   </button>
+                  )}
                 </div>
               </div>
             </SwiperSlide>
