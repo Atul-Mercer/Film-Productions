@@ -154,7 +154,7 @@ export function Home() {
             style={{ marginLeft: '30px' }}
           >
             {/* <Play size={20} className="group-hover:scale-110 transition-transform" /> */}
-            Watch Trailer
+            Watch Now
           </a>
           ) : (
 
