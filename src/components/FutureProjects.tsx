@@ -13,6 +13,7 @@ import THELIVES from '../assets/coming/THELIVES.png';
 import YHW from '../assets/coming/YHW.png';
 import NAYANTARA from '../assets/coming/NAYANTARA.png';
 import DHADEECHA from '../assets/coming/DHADEECHA.png'
+import NewTheLies from '../assets/coming/Presents.jpeg'
 
 export function FutureProjects() {
   const futureProjects = [
@@ -200,7 +201,7 @@ uninvited.`,
       id: 11,
       title: 'The Lies We Hold (Short film)',
       type: 'Genre - Suspense Drama',
-      image: THELIVES,
+      image: NewTheLies,
       timeline: '2025-2026',
       description: 'Who is truly right-me, or the other person? In today’s world, everyone is desperate to prove themselves right and others wrong. Most unsettling truth, however, is that people no longer seek honesty; they seek justification. They live wrapped in the comfort of their own delusions. This is the story of Sumit - a man caught in that same web of self-righteousness and confusion. As he found out something about his girlfriend that relationship begins to crumble, he confronts not just his girlfriend’s truths, but his own.',
         director: 'Directors : Deep Mala Srivastava',

@@ -81,6 +81,7 @@ export function Home() {
       title: 'Shubh Deepawali ',
       description:
         'An emotional journey that explores how ego can destroy relationships and how the power of compassion and unity can heal what pride once broke.',
+        
     },
     {
       image: third,
@@ -89,6 +90,7 @@ export function Home() {
       title: 'Mosquito',
       description:
         'Set against the backdrop of modern relationships, the story exposes how one-sided love fueled by ego and jealousy can disrupt lives and challenge the values of respect and empathy, how a man’s obsession spirals into chaos-revealing how pride and insecurity can destroy more than just hearts.',
+        link: 'https://www.youtube.com/watch?v=HnaQuNk4E28'
     },
     {
       image: fourth,
@@ -97,6 +99,7 @@ export function Home() {
       title: 'Mehraru ',
       description:
         'In todays times, extramarital affairs have become very common, and this comedy short film humorously tackles this very issue.',
+        link: 'https://www.youtube.com/watch?v=OZLnRwWifVo'
     },
   ];
 
